@@ -169,7 +169,7 @@ body{
     padding:5px 30px;
 }
 .header .profile-section ul li.search{
-    padding: 10px 45px!important;
+    padding: 10px 45px 10px 10px!important;
 }
 .header .profile-section ul li .search-box {
     /* left: 75px; */
@@ -178,7 +178,7 @@ body{
   }
   
   .header .profile-section ul li .input {
-    position: absolute;
+    position: relative;
       top: 6px;
       right: -12px;
       box-sizing: border-box;
@@ -212,11 +212,12 @@ body{
   
   .header .profile-section ul li .input.active {
     width: 307px;
-    right: 27px;
+    right: -12px;
     height: 62px;
     cursor: pointer;
     position: relative; 
-    font-size: 13px;  
+    font-size: 12px;
+    padding-left: 5px;  
   }
 .header .profile-section ul li .fa{
     font-size:20px;
@@ -498,7 +499,7 @@ body{
     border: 1px solid #e1e1e1;
 }
 .middle-container .input-container .heart .fa-heart{
-    font-size: 22px;
+    font-size: 18px;
     color: #686868;
 }
 .middle-container .input-container .heart .fa-heart:hover{
@@ -533,9 +534,15 @@ body{
    
    
 }
+.middle-container .input-container .fa-plus{
+    margin: 3px 8px 3px 3px;
+}
+.middle-container .input-container .fa-ban{
+    margin: 3px 8px 3px 3px;
+}
 
 .middle-container .input-container .angle-down .fa-angle-down{
-    font-size: 34px;
+    font-size: 28px;
     font-weight: bold;
     margin-left: 0px!important;
     color: #686868;
@@ -580,6 +587,7 @@ body{
 .middle-container .btn-post{
     font-weight: bold;
     padding:6px 40px;
+    border: 1px solid #198cce;
 }
 
 /* post container start */
