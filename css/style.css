@@ -133,9 +133,10 @@ body{
 .header .primary-container{
     display: flex;
     justify-content: space-between;
+    height: 70px;
 }
 .header .primary-container .logo-container{
-    height: 47px;
+    height: 39px;
 }
 .header .primary-container img{
   
@@ -166,10 +167,10 @@ body{
     align-items: center;
     border-left: 1px solid #e0e0e0;
     border-bottom:none;
-    padding:5px 30px;
+    padding:5px 23px;
 }
 .header .profile-section ul li.search{
-    padding: 10px 45px 10px 10px!important;
+    padding: 10px 39px 10px 3px!important;
 }
 .header .profile-section ul li .search-box {
     /* left: 75px; */
