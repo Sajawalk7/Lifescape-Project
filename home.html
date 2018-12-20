@@ -37,7 +37,7 @@
                         <!-- <button class="btn-blue">Add Moment</button> -->
                          <div class="dropdown-container header-btn">
                             <div class="">
-                                <button class="btn-dropdown btn-blue btn-search">Add Moment</button>
+                                <button class="btn-dropdown btn-blue btn-search ">Add Moment</button>
                                 <div class="moment">
                                
                                     
@@ -103,7 +103,7 @@
                                                 <div class="btn-click">
                                                     <button class="btn-dropdown btn-transparent btn-padding" >
                                                         <div class="angle-down closed" id="toggle">
-                                                            <a class=" btn-post1"><i class="fa fa-list-ul" aria-hidden="true"></i>Add <i class="fa fa-angle-down" aria-hidden="true"></i></a> 
+                                                            <a class=" btn-post1 border-add"><i class="fa fa-list-ul" aria-hidden="true"></i>Add <i class="fa fa-angle-down" aria-hidden="true"></i></a> 
                                                         </div></button>
                                                         <ul class="drop drop-area">
                                                             <li><a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i>Bottle & Can Design</a></li>
@@ -794,30 +794,62 @@
         </div>
 </section>
 <script>
+
+// $(document).ready(function(){
+    
+//     $(".btn-search").click(function(){
+//       $(".btn-drop").slideToggle();
+//     });
+    
+//        });
+//     $(document).on("click", function(event){
+//           var $trigger = $(".btn-search");
+//           if($trigger !== event.target && !$trigger.has(event.target).length){
+//               $(".btn-drop").slideUp();
+//           }
+//       });
+// Show hide popover
+$(document).ready(function(){
+$(".btn-search").click(function(){
+        $('.btn-drop').fadeOut();
+        $(this).parent().find('.btn-drop').toggle();
+    });
+// $(document).on("click", function(event){
+//             var $trigger = $(".btn-search");
+//             if($trigger !== event.target && !$trigger.has(event.target).length){
+//                 $(".btn-drop").slideUp("fast");
+//             }
+//         });
+                $(document).on("click", function(event){
+            var $trigger = $(".btn-clicked");
+            if($trigger !== event.target && !$trigger.has(event.target).length){
+                $(".drop2").slideUp("fast");
+            }
+        });
+});
+
         $(document).ready(function(){
     $(".btn-clicked").click(function(){
         $('.drop2').fadeOut();
         $(this).parent().find('.drop2').toggle();
     });
     });
-        // $(document).on("click", function(event){
-        //     var $trigger = $(".btn-clicked");
-        //     if($trigger !== event.target && !$trigger.has(event.target).length){
-        //         $(".drop2").slideUp("fast");
-        //     }
-        // });
+        $(document).on("click", function(event){
+            var $trigger = $(".btn-clicked");
+            if($trigger !== event.target && !$trigger.has(event.target).length){
+                $(".drop2").slideUp("fast");
+            }
+        });
     
-         $(document).ready(function(){
-    
-      $(".btn-search").click(function(){
-        $(".btn-drop").slideToggle();
-      });
+        
+
+
     // Show hide popover
     $(".btn-click").click(function(){
         $('.drop').fadeOut();
         $(this).parent().find('.drop').toggle();
     });
-    });
+    
         $(document).on("click", function(event){
             var $trigger = $(".btn-click");
             if($trigger !== event.target && !$trigger.has(event.target).length){
