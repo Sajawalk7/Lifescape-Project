@@ -34,7 +34,124 @@
                 </div>
 
                 <div class="secondry-container">
-                    <button class="btn-blue">Add Moment</button>
+                        <!-- <button class="btn-blue">Add Moment</button> -->
+                         <div class="dropdown-container header-btn">
+                            <div class="">
+                                <button class="btn-dropdown btn-blue btn-search">Add Moment</button>
+                                <div class="moment">
+                               
+                                    
+                                <div class="profile-main-wrapper btn-drop">
+                                    <div class="middle-container">
+                                        <p>Add a <i class="fa fa-quote-left"></i> Moment</p>
+                                        <div class="input-container input-section">
+                                            <input type="text" placeholder="Enter Your Title">
+                                            <div class="select-section">
+                                           
+                                           
+                                            <select name="" id="day">
+                                                
+                                            </select>
+                                             <select name="" id="month">
+                                                <option value="0">1</option>
+                                                <option value="1">2</option>
+                                                <option value="2">3</option>
+                                                <option value="3">4</option>
+                                                <option value="4">5</option>
+                                                <option value="5">6</option>
+                                                <option value="6">7</option>
+                                                <option value="7">8</option>
+                                                <option value="8">9</option>
+                                                <option value="9">10</option>
+                                                <option value="10">11</option>
+                                                <option value="11">12</option>
+                                            </select>
+                                             <select name="" id="year">
+                                                 <option value="2018">2018</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2014">2014</option>
+                                                <option value="2013">2013</option>
+                                                <option value="2012">2012</option>
+                                            </select>
+                                        </div>
+
+
+                                        </div>
+                                        <div class="image-upload">
+                                            <img src="./assets/images/dragimage.PNG">
+                                        </div>
+                                        <div class="btn-and-icon dropdown-icons">
+                                            <div>
+                                                
+                                                    <span><a href="#"><i class="fa fa-file"></i></a></span>
+                                                    <span><a href="#"><i class="fa fa-map-marker"></i></a></span>
+                                                    <span><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></span>
+                                                    <span><a href="#"><i class="fa fa-music"></i></a></span>
+                                                    <span><a href="#"><i class="fa fa-paperclip"></i></a></span>
+                                               
+
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                     <div class="post-section">
+
+                                                
+                                               <div class="dropdown-container">
+                                                <div class="btn-click">
+                                                    <button class="btn-dropdown btn-transparent btn-padding" >
+                                                        <div class="angle-down closed" id="toggle">
+                                                            <a class=" btn-post1"><i class="fa fa-list-ul" aria-hidden="true"></i>Add <i class="fa fa-angle-down" aria-hidden="true"></i></a> 
+                                                        </div></button>
+                                                        <ul class="drop drop-area">
+                                                            <li><a href="#">Bottle & Can Design</a></li>
+                                                            <li><a href="#">Celebrities, Paparazzi, Movies & Coke</a></li>
+                                                            <li><a href="#">Coca Cola and Sports</a></li>
+                                                            <li><a href="#">Coca Cola Collectibles and Merchandise</a></li>
+                                                            <li><a href="#">Coca Cola Collectibles and Merchandise</a></li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-container ">
+                                                <div class="btn-click">
+                                                    <button class="btn-dropdown btn-transparent btn-padding" >
+                                                        <div class="angle-down closed" id="toggle">
+                                                           <a class=" btn-post1"><i class="fa fa-globe" aria-hidden="true"></i>Public <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                        </div></button>
+                                                        <ul class="drop">
+                                                            <li><a href="#">Public </a></li>
+                                                            <li><a href="#">Friend Only</a></li>
+                                                            <li><a href="#">Private</a></li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-container">
+                                                <div class="btn-click">
+                                                    <button class="btn-dropdown btn-transparent btn-padding" >
+                                                        <div class="angle-down closed" id="toggle">
+                                                            <a class=" btn-post1"><i class="fa fa-share-alt" aria-hidden="true"></i>Social <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                        </div></button>
+                                                        <ul class="drop">
+                                                            <li><a href="#">FaceBook </a></li>
+                                                            <li><a href="#">linkedin</a></li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                        
+                                                
+                                                
+                                                <a href="" class=" btn-post btn-green">Post <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                            </div>
+                                </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
                     <div class="dropdown-container header-btn">
                         <div class="btn-click">
                             <button class="btn-dropdown btn-transparent" ><span>My LifeScape</span><i class="fa fa-angle-down"></i></button>
@@ -678,59 +795,123 @@
 </section>
 <script>
         $(document).ready(function(){
-               // Show hide popover
-               $(".btn-click").click(function(){
-                   $('.drop').fadeOut();
-                   $(this).parent().find('.drop').toggle();
-               });
-           });
-           $(document).on("click", function(event){
-               var $trigger = $(".btn-click");
-               if($trigger !== event.target && !$trigger.has(event.target).length){
-                   $(".drop").slideUp("fast");
-               }
-           });
-        
-           $(document).ready(function () {
+    $(".btn-clicked").click(function(){
+        $('.drop2').fadeOut();
+        $(this).parent().find('.drop2').toggle();
+    });
+    });
+        // $(document).on("click", function(event){
+        //     var $trigger = $(".btn-clicked");
+        //     if($trigger !== event.target && !$trigger.has(event.target).length){
+        //         $(".drop2").slideUp("fast");
+        //     }
+        // });
+    
+         $(document).ready(function(){
+    
+      $(".btn-search").click(function(){
+        $(".btn-drop").slideToggle();
+      });
+    // Show hide popover
+    $(".btn-click").click(function(){
+        $('.drop').fadeOut();
+        $(this).parent().find('.drop').toggle();
+    });
+    });
+        $(document).on("click", function(event){
+            var $trigger = $(".btn-click");
+            if($trigger !== event.target && !$trigger.has(event.target).length){
+                $(".drop").slideUp("fast");
+            }
+        });
+    
+        $(document).ready(function () {
             $('#btn-click').on('click',function () {
-            $('#drop1').toggle();
+                $('#drop1').toggle();
             });
+        });
+        $(document).on("click", function(event){
+            var $trigger = $(".btn-click");
+            if($trigger !== event.target && !$trigger.has(event.target).length){
+                $(".drop1").slideUp("fast");
+            }
+        });
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $(".input").toggleClass("active slow").focus;
+    
+                $(".input").val("");
             });
-           $(document).on("click", function(event){
-               var $trigger = $(".btn-click");
-               if($trigger !== event.target && !$trigger.has(event.target).length){
-                   $(".drop1").slideUp("fast");
-               }
-           });
+        });
+        $(function() {
+            $("#toggle").on('click', function() {
+                $(".fa-angle-down").toggleClass("rotate");
+            });
+        });
+        $(function() {
+            $("#toggle1").on('click', function() {
+                $(".fa-angle-down").toggleClass("rotate");
+            });
+        });
+        $(function() {
+            $("#toggle2").on('click', function() {
+                $(".fa-angle-down").toggleClass("rotate");
+            });
+        });
+        $(function() {
+            $("#toggle3").on('click', function() {
+                $(".fa-angle-down").toggleClass("rotate");
+            });
+        });
+    
+    
+    </script>
+    <script>
             $(document).ready(function(){
-       $(".btn").click(function(){
-     $(".input").toggleClass("active").focus;
-     
-     $(".input").val("");
-   });
-   });
-   $(function() {
-    $("#toggle").on('click', function() {   
-       $(".fa-angle-down").toggleClass("rotate");
-    });
-});
-$(function() {
-    $("#toggle1").on('click', function() {   
-       $(".fa-angle-down").toggleClass("rotate");
-    });
-});
-$(function() {
-    $("#toggle2").on('click', function() {   
-       $(".fa-angle-down").toggleClass("rotate");
-    });
-});
- $(function() {
-    $("#toggle3").on('click', function() {   
-       $(".fa-angle-down").toggleClass("rotate");
-    });
-});
-
-      
-   </script>
+    
+                dpick('#year','#month','#day',1);
+            });
+    
+            function dpick(year,month,day,td){
+                if(td==1){
+                    var today = new Date();
+                    $(year).val(today.getFullYear());
+                    $(month).val(today.getMonth());
+                }
+                $(year).change(function(){
+                    dpick(year,month,day);
+                });
+                $(month).change(function(){
+                    dpick(year,month,day);
+                }); 
+                var month_val = $(month).val();
+                var i=0;
+                $(day).empty();
+                if(month_val=="1"){
+                    if($(year).val()%4 == 0){
+                        for(i=1;i<=29;i++){
+                            $(day).append($("<option></option>").attr("value", i).text(i));
+                        }
+                    }else{
+                        for(i=1;i<=28;i++){
+                            $(day).append($("<option></option>").attr("value", i).text(i));
+                        }
+                    }
+                }
+                else if(month_val=="8" || month_val=="3" || month_val=="5" || month_val=="10"){
+                    for(i=1;i<=30;i++){
+                        $(day).append($("<option></option>").attr("value", i).text(i));
+                    }
+                }
+                else{
+                    for(i=1;i<=31;i++){
+                        $(day).append($("<option></option>").attr("value", i).text(i));
+                    }
+                }
+                if(td==1){
+                    $(day).val(today.getDate());
+                }
+            }
+        </script>
 </body>
 </html>
