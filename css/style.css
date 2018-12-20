@@ -697,10 +697,13 @@ body{
 .post-section .drop{
     margin-top: 1px!important;
     margin-left: -35px!important;
-    width: 100%;
+    width: 180px;
+}
+.post-section .drop li i{
+    margin: 3px 6px 3px 3px;
 }
 .post-section .drop-area{
- width: 300px!important;
+ width: 350px!important;
 }
 .post-section .drop:before{
     display: none;
