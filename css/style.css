@@ -288,7 +288,7 @@ body{
     background: #f2f2f2;
     top: 40px;
     right: -15rem;
-    width: 430px;
+    width: 406px;
     font-weight: 300;
     background: white;
     border-radius: 0.5rem;
@@ -325,14 +325,14 @@ body{
 
   .notification-section h3 {
     text-transform: uppercase;
-    font-size: 75%;
+    font-size: 14px;
     font-weight: 700;
     color: #84929f;
-    padding: 1.5rem 2rem;
+    padding: 0.1rem 2rem;
   }
   .notification-box {
     overflow: hidden;
-    padding: 15px 15px;
+    padding: 12px 15px 7px 15px;
     border-bottom: 1px solid #c4c4c4;
     position: relative;
     cursor: pointer;
@@ -367,10 +367,10 @@ body{
 }
 .notification-box .middle-area p{
     margin: 0px;
-    padding-top: 14px;
+    padding-top: 12px;
     color: #454545;
-    font-size: 13px;
-    line-height: 19px;
+    font-size: 12px;
+    line-height: 8px;
     text-indent: 0px;
    }
    .notification-box .middle-area .year p{
@@ -521,8 +521,14 @@ body{
 }
 .middle-container .input-container .heart .fa-heart{
     font-size: 18px;
-    color: #686868;
+    color: #88C100;
     cursor: pointer;
+}
+.middle-container .input-container .heart span{
+    font-size: 14px;
+    color: #686868;
+    margin-left: 6px;
+    margin-top: -2px;
 }
 .middle-container .input-container .heart .fa-heart:hover{
     color: #88C100;
@@ -606,10 +612,9 @@ body{
     border: 1px solid #198cce;
 }
 /*moment css*/
-.dropdown-container ul.moment{
-    min-width: 500px;
-   margin-top: 10px;
-   margin-left: -22px;
+.moment{
+   display: none;
+  
 }
 .dropdown-container ul.moment:before{
        right: 420px!important;
