@@ -795,31 +795,12 @@
 </section>
 <script>
 
-// $(document).ready(function(){
-    
-//     $(".btn-search").click(function(){
-//       $(".btn-drop").slideToggle();
-//     });
-    
-//        });
-//     $(document).on("click", function(event){
-//           var $trigger = $(".btn-search");
-//           if($trigger !== event.target && !$trigger.has(event.target).length){
-//               $(".btn-drop").slideUp();
-//           }
-//       });
-// Show hide popover
 $(document).ready(function(){
-$(".btn-search").click(function(){
-        $('.btn-drop').fadeOut();
-        $(this).parent().find('.btn-drop').toggle();
+    
+    $(".btn-search").click(function(){
+      $(".btn-drop").slideToggle();
     });
-// $(document).on("click", function(event){
-//             var $trigger = $(".btn-search");
-//             if($trigger !== event.target && !$trigger.has(event.target).length){
-//                 $(".btn-drop").slideUp("fast");
-//             }
-//         });
+    
                 $(document).on("click", function(event){
             var $trigger = $(".btn-clicked");
             if($trigger !== event.target && !$trigger.has(event.target).length){
@@ -945,5 +926,8 @@ $(".btn-search").click(function(){
                 }
             }
         </script>
+
+
+
 </body>
 </html>

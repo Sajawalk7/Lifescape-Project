@@ -129,3 +129,4 @@ slider.oninput = function() {
         getdiv.style.right = '409px';
     }
 }
+

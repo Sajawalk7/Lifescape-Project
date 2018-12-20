@@ -68,6 +68,7 @@ body{
     color:#000;
     padding: 5px 10px;
     background: #fff;
+    font-size: 14px;
 }
 .dropdown-container ul li a:hover{
     background-color: #f7f7f7;
@@ -286,7 +287,7 @@ body{
     z-index: 999;
     background: #f2f2f2;
     top: 40px;
-    right: -21rem;
+    right: -15rem;
     width: 430px;
     font-weight: 300;
     background: white;
@@ -301,16 +302,25 @@ body{
   }
   .notification-section:before {
     content: "";
+    width: 0;
+    height: 0;
     position: absolute;
-    top: 1px;
-    right: 21rem;
-    width: 20px;
-    height: 20px;
-    border-bottom-color: #c4c4c4;
-    transform: translate(-1rem, -100%);
-    border-left: .75rem solid transparent;
-    border-right: .75rem solid transparent;
-    border-bottom: .75rem solid white;
+    bottom: 100%;
+    right: 16rem;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1) transparent;
+  }
+  .notification-section:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 16.1rem;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #fff transparent;
   }
 
   .notification-section h3 {
@@ -512,6 +522,7 @@ body{
 .middle-container .input-container .heart .fa-heart{
     font-size: 18px;
     color: #686868;
+    cursor: pointer;
 }
 .middle-container .input-container .heart .fa-heart:hover{
     color: #88C100;
@@ -617,7 +628,7 @@ body{
    color: #198cce;
 }
 .middle-container p{
-   font-size: 18px;
+   font-size: 14px;
 }
 .middle-container p .fa-quote-left{
    color: #198cce;
