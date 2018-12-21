@@ -69,6 +69,10 @@ body{
     padding: 5px 10px;
     background: #fff;
     font-size: 13px;
+
+}
+.icon-color{
+    color: #198cce!important;
 }
 .dropdown-container ul li a:hover{
     background-color: #f7f7f7;
@@ -81,6 +85,74 @@ body{
 }
 .dropdown-container button:focus{
     outline:none;
+}
+.popup-textarea{
+    padding-left: 13px;
+    margin-top: 9px;
+    background-color: whitesmoke;
+    display: none;
+    border: 1px solid #dadada!important;
+resize: none;
+    width: 461px;
+}
+.popup-textarea::placeholder{
+    padding-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+.place-search-div{
+    display: none;
+}
+.file-upload {
+    background-image: url("../assets/images/drag_me_img.png");
+    PADDING: 40px 93px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    margin-top:12px;
+    cursor: pointer;
+    background-color:#eaeaea;
+    border: 1px dashed #454545;
+}
+input[type=file]::-webkit-file-upload-button{
+    display: none!important;
+
+}
+.people-search-div{
+    display: none;
+}
+.placeSearch{
+    border: 1px solid #dadada;
+    width: 461px;
+    padding: 7px 9px;
+    margin-top: 15px;
+    background-color: whitesmoke;
+
+}
+.display-text{
+    display: block!important;
+}
+.hide-text{
+    display: none!important;
+}
+.people-search{
+    border: 1px solid #dadada;
+    width: 461px;
+    padding: 7px 9px;
+    margin-top: 15px;
+    background-color: whitesmoke;
+
+}
+.search-sort{
+    position: absolute;
+    bottom: 145px;
+    right: 27px;
+}
+.search-sort-two{
+    position: absolute;
+    bottom: 141px;
+    right: 27px;
 }
 .drop:before {
     content: "";
@@ -258,6 +330,7 @@ body{
     min-width: 150px;
     margin-top: 10px;
     margin-left: -22px;
+    left: 35px!important;
 }
 .Library-drop:before{
     right: 52px!important;
@@ -618,7 +691,7 @@ body{
 }
 /*moment css*/
 .moment{
-   display: none;
+   /*display: none;*/
   
 }
 .dropdown-container ul.moment:before{
@@ -636,6 +709,9 @@ body{
 }
 .middle-container .btn-and-icon div span a .fa:hover{
    color: #198cce;
+}
+.middle-container .btn-and-icon div span a .fa:focus{
+    color: #198cce;
 }
 .middle-container p{
    font-size: 14px;
@@ -726,7 +802,7 @@ body{
     margin: 3px 6px 3px 3px;
 }
 .post-section .drop-area{
- width: 350px!important;
+ width: 330px!important;
 }
 .post-section .drop:before{
     display: none;

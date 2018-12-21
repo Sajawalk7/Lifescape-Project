@@ -79,17 +79,26 @@
 
 
                                         </div>
-                                        <div class="image-upload">
-                                            <img src="./assets/images/dragimage.PNG">
-                                        </div>
+                                        <input type="file" class="file-upload">
+                                            <!--<img src="./assets/images/dragimage.PNG">-->
+
+                                        <textarea rows="4" cols="50" placeholder="Say something about the moment" class="popup-textarea" id="popup-textarea"></textarea>
+                                        <div class="place-search-div" id="place-search">
+                                            <input type="search" placeholder="Search for a place" class="placeSearch"><i class="fa fa-sort-down search-sort" ></i></div>
+                                        <div class="people-search-div" id="people-search">
+                                        <input type="search" placeholder="Search People" class="people-search"><i class="fa fa-search search-sort-two"></i> </div>
+                                        <div class="people-search-div" id="music-search">
+                                            <input type="search" placeholder="Search MediaNet Songs(s)" class="people-search"><i class="fa fa-search search-sort-two"></i> </div>
+                                        <div class="people-search-div" id="link-search">
+                                            <input type="search" placeholder="Enter or Pase Link (URL)" class="people-search"> </div>
                                         <div class="btn-and-icon dropdown-icons">
                                             <div>
                                                 
-                                                    <span><a href="#"><i class="fa fa-file"></i></a></span>
-                                                    <span><a href="#"><i class="fa fa-map-marker"></i></a></span>
-                                                    <span><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></span>
-                                                    <span><a href="#"><i class="fa fa-music"></i></a></span>
-                                                    <span><a href="#"><i class="fa fa-paperclip"></i></a></span>
+                                                    <span><a href="#"><i class="fa fa-file" id="file-click"></i></a></span>
+                                                    <span><a href="#"><i class="fa fa-map-marker" id="map-click"></i></a></span>
+                                                    <span><a href="#"><i class="fa fa-user" aria-hidden="true" id="user-click"></i></a></span>
+                                                    <span><a href="#"><i class="fa fa-music" id="music-click"></i></a></span>
+                                                    <span><a href="#"><i class="fa fa-paperclip" id="clip-click" ></i></a></span>
                                                
 
                                             </div>
@@ -926,7 +935,69 @@ $(document).ready(function(){
                     $(day).val(today.getDate());
                 }
             }
-        </script>
+
+//            function inputHideShow(val) {
+//             var inputone=document.getElementById("input1");
+//                var inputwo=document.getElementById("input2");
+//                var inputthree=document.getElementById("input3");
+//                var inputfour=document.getElementById("input4");
+//                var inputfive=document.getElementById("input5");
+//                if (val === 1){
+//                    element.classList.remove("displayblock")
+//                }
+//            }
+//
+//
+//            inputHideShow(val);
+            $(document).ready(function () {
+                $('#file-click').click(function(e){
+                    e.preventDefault();
+                    $("#popup-textarea").addClass("display-text");
+                    $("#file-click").addClass("icon-color");
+                    $("#map-click,#user-click,#clip-click,#music-click").removeClass('icon-color');
+                    $("#place-search,#people-search,#music-search,#link-search").removeClass("display-text");
+
+                });
+
+                $('#map-click').click(function(e){
+                    e.preventDefault();
+                    $("#place-search").addClass("display-text");
+                    $("#map-click").addClass("icon-color");
+                    $("#file-click,#user-click,#music-click,#clip-click").removeClass('icon-color');
+                    $("#popup-textarea,#people-search,#music-search,#link-search").removeClass("display-text");
+
+                });
+
+                $('#user-click').click(function(e){
+                    e.preventDefault();
+                    $("#people-search").addClass("display-text");
+                    $("#user-click").addClass("icon-color");
+                    $("#file-click,#map-click,#clip-click,#music-click").removeClass('icon-color');
+                    $("#popup-textarea,#place-search,#music-search,#link-search").removeClass("display-text");
+
+                });
+
+                $('#music-click').click(function(e){
+                    e.preventDefault();
+                    $("#music-search").addClass("display-text");
+                    $("#music-click").addClass("icon-color");
+                    $("#file-click,#map-click,#clip-click,#user-click").removeClass('icon-color');
+                    $("#popup-textarea,#place-search,#people-search,#link-search").removeClass("display-text");
+
+                });
+                $('#clip-click').click(function(e){
+                    e.preventDefault();
+                    $("#link-search").addClass("display-text");
+                    $("#clip-click").addClass("icon-color");
+                    $("#file-click,#map-click,#music-click,#user-click").removeClass('icon-color');
+                    $("#popup-textarea,#place-search,#people-search,#music-search").removeClass("display-text");
+
+                });
+
+
+            })
+
+    </script>
 
 
 
