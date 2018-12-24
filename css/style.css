@@ -104,7 +104,7 @@ body{
     display: none;
 }
 .file-upload {
-    background-image: url("../assets/images/drag_me_img.png");
+    /*background-image: url("../assets/images/drag_me_img.png");*/
     PADDING: 40px 95px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -112,8 +112,12 @@ body{
     outline: none;
     margin-top:12px;
     cursor: pointer;
-    background-color:#eaeaea;
+
     border: 1px dashed #454545;
+    z-index: 1;
+
+    position: relative;
+
 
 }
 input[type=file]::-webkit-file-upload-button{
@@ -482,6 +486,7 @@ input[type=file]::-webkit-file-upload-button{
     /* overflow: hidden; */
     box-shadow: 1px 1px 13px #dcd6d6;
     border: 1px solid #dadada;
+
 }
 .content-profile .img-text{
     display: flex;
@@ -702,7 +707,39 @@ input[type=file]::-webkit-file-upload-button{
        right: 421px!important;
 }
 .middle-container .dropdown-icons div span{
-  margin-right: 50px;
+    margin-right: 52px;
+    margin-left: 1px;
+}
+#upload-inside-div{
+    display: flex;
+    left: 132px;
+    top: 135px;
+    position: absolute;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 0;
+}
+#upload-inside-div img{
+    height: 44px;
+    width: 44px;
+}
+
+.file-upload-div{
+    background-color:#eaeaea;
+}
+
+
+
+#upload-inside-div p{
+    font-size: 9px!important;
+    padding-left: 11px;
+    padding-top: 2px;
+    letter-spacing: 0.5px;
+    color: #8b8b8b;
+}
+#upload-inside-div p span{
+    font-size: 11px!important;
+    font-weight: bold!important;
 }
 .middle-container .btn-and-icon div span a .fa{
  color: #7a7a7a;
@@ -2117,6 +2154,7 @@ a:hover{
     padding-top: 25px;
     margin-top: 0;
     background: #ffffff;
+
 }
 .about .post-container .middle-container {
     padding: 18px 40px 20px 30px;
