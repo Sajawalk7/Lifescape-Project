@@ -811,17 +811,25 @@ input[type=file]::-webkit-file-upload-button{
    width: 170px;
    text-align: center;
    padding: 10px;
+   font-size: 15px;
 }
 .post-section .btn-green i{
-   margin-left: 20px;
+   margin-left: 50px;
+   font-weight: bold;
+   font-size: 18px;
+}
+.fa{
+    cursor: pointer;
 }
 .post-section .btn-post1:hover{
  background-color: whitesmoke;
  border-radius: 3px;
+ color: #337ab7;
 }
 .post-section .btn-post1 i{
    margin: 3px 6px 3px 3px;
 }
+
 .select-section{
    display: flex;
    margin-left: 8px;
