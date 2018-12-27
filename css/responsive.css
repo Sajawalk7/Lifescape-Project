@@ -326,7 +326,64 @@
         margin-left: -116px!important;
     }
     .moment{
-        display: none;
+        /*display: none;*/
+    }
+    .popup-overlay.active{
+        width: 289px;
+        top: -81px;
+    }
+    #upload-inside-div{
+        left: 40px;
+    }
+    #upload-inside-div p{
+        font-size: 8px!important;
+    }
+    .middle-container .dropdown-icons div span{
+        margin-right: 18px;
+        margin-left: 18px;
+    }
+    .post-section .btn-post1{
+        width: 72.5px;
+        font-size: 12px;
+    }
+    .post-section .btn-post1 i{
+        margin: 3px 4px 3px 0px;
+    }
+    .btn-post1 .fa-angle-down{
+        margin-left: 4px!important;
+    }
+    .middle-container .input-section input[type=text]{
+        font-size: 14px;
+    }
+    .post-section .btn-green{
+        width: 70px;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+    .post-section .btn-green i{
+        margin-left: 10px;
+    }
+    .btn-drop{
+        width: 289px;
+        left: -15px;
+    }
+    #upload-inside-div p span{
+        font-size: 10px!important;
+    }
+    .select-section select{
+        padding: 0px 0px;
+    }
+    .section-img{
+        width: 95%;
+    }
+    .services-section{
+        width: 95%;
+    }
+    .search-sort-two{
+        bottom: 130px;
+    }
+    .search-sort{
+        bottom: 130px;
     }
     @-webkit-keyframes fadeIn {
         from {
@@ -369,6 +426,8 @@
   }
   .header .profile-section ul li .input.active{
     height: 40px;
+      width: 274px;
+      font-size: 10px;
   }
   .header .profile-section ul li .btn{
     height: 40px;
@@ -407,21 +466,28 @@
   flex-direction: column;
   margin-left: -133px;
 }
+    .dropdown-container .fa-angle-down{
+        color: black;
+    }
   .notification-box .middle-area .year p{
-    font-size: 9px;
+      font-size: 8px;
   }
   .notification-box .middle-area p{
-    font-size: 10px;
+      font-size: 8px;
   }
   .notification-box .middle-area h5{
-    font-size: 11px;
+    font-size: 10px;
   }
   .notification-box .image-area img {
-    width: 40px;
-    height: 40px;
+      width: 35px;
+      height: 35px;
   }
+    .btn-transparent{
+        color: black;
+        font-weight: bold;
+    }
   .notification-section{
-    width: 350px;
+    width: 304px;
     right: -2rem;
   }
   .notification-box{

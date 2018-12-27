@@ -209,6 +209,8 @@ input[type=file]::-webkit-file-upload-button{
 .header{
     box-shadow: 0 2px 6px #dcd6d6;
     background:#fff;
+    /*width: 99%;*/
+    /*margin-left: 6.5px;*/
 }
 .header .primary-container{
     display: flex;
@@ -1045,10 +1047,12 @@ border-left: none;
 /* bacground image section start */
 
 .section-img{
-    background-image: url(../../lifescape/assets/images/building.jpg);
+    background-image: url(../assets/images/building.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 99%;
+    margin-left: 6.5px;
 }
 .section-img .img-wrapper {
     display: flex;
@@ -1089,6 +1093,13 @@ border-left: none;
 /* navigation section start */
 .services-section{
     background:#fff;
+    width: 99%;
+    margin-left: 6.5px;
+    border-right: 1px solid #8a7e7e;
+    border-bottom: 1px solid#8a7e7e ;
+    border-left: 1px solid #8a7e7e;
+    box-shadow: 0px 5px 9px #dcd6d6;
+
 }
 .services-section .top-navigation ul{
     margin-top: 8px;
@@ -2307,6 +2318,7 @@ a:hover{
     background:#ffffff;
     width:100%;
     z-index: 1;
+    left: 0;
   }
   .popup-overlay.active{
     /*displays pop-up when "active" class is present*/
