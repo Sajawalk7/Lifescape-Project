@@ -1,3 +1,272 @@
+
+// new script start
+    
+$(document).on("click", function(event){
+    var $trigger = $(".btn-clicked");
+    if($trigger !== event.target && !$trigger.has(event.target).length){
+        $(".drop2").slideUp("fast");
+    }
+});
+
+$(".btn-clicked").click(function(){
+    $('.drop2').fadeOut();
+    $(this).parent().find('.drop2').toggle();
+});
+
+$(document).on("click", function(event){
+    var $trigger = $(".btn-clicked");
+    if($trigger !== event.target && !$trigger.has(event.target).length){
+        $(".drop2").slideUp("fast");
+    }
+});
+
+// Show hide popover
+$(".btn-click").click(function(){
+    $('.drop').fadeOut();
+    $(this).parent().find('.drop').toggle();
+});
+
+    $(document).on("click", function(event){
+        var $trigger = $(".btn-click");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $(".drop").slideUp("fast");
+        }
+    });
+
+    $('#btn-click').on('click',function () {
+        $('#drop1').toggle();
+    });
+
+    $(document).on("click", function(event){
+        var $trigger = $(".btn-click");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $(".drop1").slideUp("fast");
+        }
+    });
+
+    $(".btn").click(function(){
+        $(".input").toggleClass("active slow").focus;
+
+        $(".input").val("");
+    });
+
+    $('#file-click').click(function(e){
+        e.preventDefault();
+        $("#popup-textarea").addClass("display-text");
+        $("#file-click").addClass("icon-color");
+        $("#map-click,#user-click,#clip-click,#music-click").removeClass('icon-color');
+        $("#place-search,#people-search,#music-search,#link-search").removeClass("display-text");
+
+    });
+
+    $('#map-click').click(function(e){
+        e.preventDefault();
+        $("#place-search").addClass("display-text");
+        $("#map-click").addClass("icon-color");
+        $("#file-click,#user-click,#music-click,#clip-click").removeClass('icon-color');
+        $("#popup-textarea,#people-search,#music-search,#link-search").removeClass("display-text");
+
+    });
+
+    $('#user-click').click(function(e){
+        e.preventDefault();
+        $("#people-search").addClass("display-text");
+        $("#user-click").addClass("icon-color");
+        $("#file-click,#map-click,#clip-click,#music-click").removeClass('icon-color');
+        $("#popup-textarea,#place-search,#music-search,#link-search").removeClass("display-text");
+
+    });
+
+    $('#music-click').click(function(e){
+        e.preventDefault();
+        $("#music-search").addClass("display-text");
+        $("#music-click").addClass("icon-color");
+        $("#file-click,#map-click,#clip-click,#user-click").removeClass('icon-color');
+        $("#popup-textarea,#place-search,#people-search,#link-search").removeClass("display-text");
+
+    });
+    $('#clip-click').click(function(e){
+        e.preventDefault();
+        $("#link-search").addClass("display-text");
+        $("#clip-click").addClass("icon-color");
+        $("#file-click,#map-click,#music-click,#user-click").removeClass('icon-color');
+        $("#popup-textarea,#place-search,#people-search,#music-search").removeClass("display-text");
+
+    });
+
+    var mouse_is_inside = false;
+    $('#moment-btn').hover(function(){
+        mouse_is_inside=true;
+    }, function(){
+        mouse_is_inside=false;
+    });
+
+    $("body").mouseup(function(){
+        if(! mouse_is_inside) $('#moment').hide();
+    });
+    $('#moment').on('click',function () {
+        $('#moment').show();
+    });
+
+    $('#moment-btn').click(function () {
+        $('#moment').toggle(300);
+    });
+
+
+    $(".open").on("click", function(){
+        $(".popup-overlay, .popup-content").addClass("active");
+      });
+      
+      //removes the "active" class to .popup and .popup-content when the "Close" button is clicked 
+      $(".close").on("click", function(){
+        $(".popup-overlay, .popup-content").removeClass("active");
+      });
+
+
+      $('#file-click1').click(function(e){
+        e.preventDefault();
+        $("#popup-textarea1").addClass("display-text");
+        $("#file-click1").addClass("icon-color");
+        $("#map-click1,#user-click1,#clip-click1,#music-click1").removeClass('icon-color');
+        $("#place-search1,#people-search1,#music-search1,#link-search1").removeClass("display-text");
+
+    });
+
+    $('#map-click1').click(function(e){
+        e.preventDefault();
+        $("#place-search1").addClass("display-text");
+        $("#map-click1").addClass("icon-color");
+        $("#file-click1,#user-click1,#music-click1,#clip-click1").removeClass('icon-color');
+        $("#popup-textarea1,#people-search1,#music-search1,#link-search1").removeClass("display-text");
+
+    });
+
+    $('#user-click1').click(function(e){
+        e.preventDefault();
+        $("#people-search1").addClass("display-text");
+        $("#user-click1").addClass("icon-color");
+        $("#file-click1,#map-click1,#clip-click1,#music-click1").removeClass('icon-color');
+        $("#popup-textarea1,#place-search1,#music-search1,#link-search1").removeClass("display-text");
+
+    });
+
+    $('#music-click1').click(function(e){
+        e.preventDefault();
+        $("#music-search1").addClass("display-text");
+        $("#music-click1").addClass("icon-color");
+        $("#file-click1,#map-click1,#clip-click1,#user-click1").removeClass('icon-color');
+        $("#popup-textarea1,#place-search1,#people-search1,#link-search1").removeClass("display-text");
+
+    });
+    $('#clip-click1').click(function(e){
+        e.preventDefault();
+        $("#link-search1").addClass("display-text");
+        $("#clip-click1").addClass("icon-color");
+        $("#file-click1,#map-click1,#music-click1,#user-click1").removeClass('icon-color');
+        $("#popup-textarea1,#place-search1,#people-search1,#music-search1").removeClass("display-text");
+
+    });
+
+
+
+
+$(document).ready(function(){
+
+dpick('#year','#month','#day',1);
+});
+
+function dpick(year,month,day,td){
+if(td==1){
+    var today = new Date();
+    $(year).val(today.getFullYear());
+    $(month).val(today.getMonth());
+}
+$(year).change(function(){
+    dpick(year,month,day);
+});
+$(month).change(function(){
+    dpick(year,month,day);
+}); 
+var month_val = $(month).val();
+var i=0;
+$(day).empty();
+if(month_val=="1"){
+    if($(year).val()%4 == 0){
+        for(i=1;i<=29;i++){
+            $(day).append($("<option></option>").attr("value", i).text(i));
+        }
+    }else{
+        for(i=1;i<=28;i++){
+            $(day).append($("<option></option>").attr("value", i).text(i));
+        }
+    }
+}
+else if(month_val=="8" || month_val=="3" || month_val=="5" || month_val=="10"){
+    for(i=1;i<=30;i++){
+        $(day).append($("<option></option>").attr("value", i).text(i));
+    }
+}
+else{
+    for(i=1;i<=31;i++){
+        $(day).append($("<option></option>").attr("value", i).text(i));
+    }
+}
+if(td==1){
+    $(day).val(today.getDate());
+}
+}
+
+
+// new js code
+
+$(document).ready(function(){
+
+dpick('#year1','#month1','#day1',1);
+});
+
+function dpick(year,month,day,td){
+if(td==1){
+var today = new Date();
+$(year).val(today.getFullYear());
+$(month).val(today.getMonth());
+}
+$(year).change(function(){
+dpick(year,month,day);
+});
+$(month).change(function(){
+dpick(year,month,day);
+}); 
+var month_val = $(month).val();
+var i=0;
+$(day).empty();
+if(month_val=="1"){
+if($(year).val()%4 == 0){
+for(i=1;i<=29;i++){
+$(day).append($("<option></option>").attr("value", i).text(i));
+}
+}else{
+for(i=1;i<=28;i++){
+$(day).append($("<option></option>").attr("value", i).text(i));
+}
+}
+}
+else if(month_val=="8" || month_val=="3" || month_val=="5" || month_val=="10"){
+for(i=1;i<=30;i++){
+$(day).append($("<option></option>").attr("value", i).text(i));
+}
+}
+else{
+for(i=1;i<=31;i++){
+$(day).append($("<option></option>").attr("value", i).text(i));
+}
+}
+if(td==1){
+$(day).val(today.getDate());
+}
+}
+
+/////////////////////////////////////////////////
+
 $(document).ready(function(){
   $("#nav-icon1").click(function(){
     $(".header .secondry-container, .header .profile-section").fadeToggle();
@@ -128,5 +397,5 @@ slider.oninput = function() {
     else if(output.innerHTML == 1987){
         getdiv.style.right = '409px';
     }
-}
 
+}

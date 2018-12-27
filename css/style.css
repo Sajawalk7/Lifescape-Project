@@ -159,7 +159,7 @@ input[type=file]::-webkit-file-upload-button{
 }
 .search-sort-two{
     position: absolute;
-    bottom: 141px;
+    bottom: 138px;
     right: 27px;
 }
 .drop:before {
@@ -218,8 +218,8 @@ input[type=file]::-webkit-file-upload-button{
 .header .primary-container .logo-container{
     height: 39px;
 }
-.header .primary-container img{
- 
+.header .primary-container .page-logo img{
+ height: 100%;
 }
 .header .primary-container .inner-container{
     display: flex;
