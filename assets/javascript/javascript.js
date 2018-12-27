@@ -267,13 +267,26 @@ $(day).val(today.getDate());
 
 /////////////////////////////////////////////////
 
-$(document).ready(function(){
-  $("#nav-icon1").click(function(){
-    $(".header .secondry-container, .header .profile-section").fadeToggle();
-  });
+
+
+
+// $(document).ready(function(){
+//   $("#nav-icon1").click(function(){
+//     $(".header .secondry-container, .header .profile-section").Fadetoggle();
+//   });
+// });
+
+$(document).ready(function () {
+    $('#nav-icon1').click(function () {
+        $('#profile-dropdown').fadeToggle();
+    });
 });
+
+
+
+
 $(document).ready(function(){
-    $('#nav-icon1').click(function(){
+    $('s').click(function(){
         $(this).toggleClass('open');
     });
 });

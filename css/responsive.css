@@ -5,7 +5,9 @@
     top: 11px;
     right: 15px;
   }
+
   #nav-icon1{
+
     width: 42px;
     height: 31px;
     position: relative;
@@ -82,12 +84,27 @@
   }
 .header .profile-section{
   margin-top: 11px;
-  display: none;
+  /*display: none;*/
 }
+  @-webkit-keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
 .header .profile-section ul {
   display: flex;
   justify-content: center;
+
 }
+
 .header .header-btn {
   margin-left: 25px;
 }
@@ -98,7 +115,10 @@
 .header  .p-0{
   padding: 0;
 }
-.header .profile-section ul li {
+  .header .profile-section ul li .input{
+    height: 60px!important;
+  }
+  .header .profile-section ul li {
   border-top: 1px solid #e0e0e0;
   padding: 10px 30px;
 }
@@ -200,6 +220,7 @@
     right: 15px;
   }
   #nav-icon1{
+    margin-top: 13px!important;
     width: 42px;
     height: 29px;
     position: relative;
@@ -263,6 +284,9 @@
   .header .primary-container .logo-container {
     margin-left: 13px;
   }
+  .header .primary-container .logo-container img{
+    margin-top: 17px;
+  }
   .header .primary-container {
     flex-direction: column;
   }
@@ -275,8 +299,45 @@
     display: flex;
     padding: 16px 0 5px;
     font-size: 11px;
-    display: none;
+      margin-top: 35px;
+
   }
+    .dropdown-container ul.drop{
+        /*right: -12px;*/
+        min-width: 150px;
+        margin-top: 10px;
+        left: 18px!important;
+    }
+    .dropdown-container ul.Library-drop{
+        min-width: 74px!important;
+        margin-top: 10px;
+        left: 18px!important;
+        margin-left: -13px;
+    }
+    .Library-drop:after{
+        right: 14px !important;
+
+    }
+    .Library-drop:before{
+        right: 11.5px!important;
+    }
+    .header .profile-section .profile-btn .profile-view{
+        /*margin-left: 16px!important;*/
+        margin-left: -116px!important;
+    }
+    .moment{
+        display: none;
+    }
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -20%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
   .header .primary-container .secondry-container .btn-blue{
     padding: 6px 10px;
   }
@@ -284,16 +345,46 @@
     margin-top: 33px;
   }
   .header .profile-section{
-    margin-top: 11px;
+    margin-top: 70px;
+    /*display: none;*/
+    z-index: 1;
+      animation-name: fadeInDown;
+  }
+  #profile-dropdown{
     display: none;
   }
   .header .profile-section ul {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    float: right;
+    background: #198cce;
+   border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
   }
+
   .header .header-btn {
     margin-left: 12px;
+    border-bottom: none;
   }
+  .header .profile-section ul li .input.active{
+    height: 40px;
+  }
+  .header .profile-section ul li .btn{
+    height: 40px;
+    right: -22px;
+  }
+  .header .profile-section ul li .input{
+    height: 40px;
+  }
+  .header .profile-section ul li.search{
+    padding: 16px 39px 0px 3px!important;
+  }
+  .header .profile-section ul li:last-child{
+    padding: 10px 27px;
+    border-right: none;
+  }
+
   .header .profile-section ul li .rounded-image {
     width: 24px;
     height: 23px;
@@ -304,21 +395,57 @@
   .header .profile-section ul li {
     border-top: 1px solid #e0e0e0;
     padding: 10px 30px;
+
   }
     .header .profile-section .drop{
     border-top: 0;
 }
 .header .profile-section .profile-btn .drop {
-    min-width: 80px;
-    margin-top: 5px;
-    left: -11px;
-    flex-direction: column;
+  min-width: 140px;
+  margin-top: 5px;
+  left: -11px;
+  flex-direction: column;
+  margin-left: -133px;
 }
-  .header .profile-section ul li .fa {
+  .notification-box .middle-area .year p{
+    font-size: 9px;
+  }
+  .notification-box .middle-area p{
+    font-size: 10px;
+  }
+  .notification-box .middle-area h5{
+    font-size: 11px;
+  }
+  .notification-box .image-area img {
+    width: 40px;
+    height: 40px;
+  }
+  .notification-section{
+    width: 350px;
+    right: -2rem;
+  }
+  .notification-box{
+    padding: 7px 15px 7px 15px;
+  }
+  .notification-section:before{
+    right: 2.5rem;
+  }
+  .notification-section:after{
+    right: 2.7rem;
+  }
+ .header .profile-section ul li .fa {
     font-size: 23px;
+    margin-left: 3px;
+    color: #332f2f;
+  }
+  .header .profile-section .profile-btn .bg-transparent{
+    flex-direction: column;
   }
   .header .profile-section ul li {
     padding: 11px 32px;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
   }
   .middle-container {
     padding: 12px;
@@ -350,6 +477,7 @@ padding: 0;
 }
 .section-img .img-wrapper {
     justify-content: center;
+    margin-top: 64px;
 }
 .about .main-div {
     flex-direction: column;
