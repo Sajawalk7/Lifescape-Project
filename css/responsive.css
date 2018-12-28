@@ -354,7 +354,7 @@
         margin-left: 4px!important;
     }
     .middle-container .input-section input[type=text]{
-        font-size: 14px;
+        font-size: 13px;
     }
     .post-section .btn-green{
         width: 100%;
@@ -373,6 +373,18 @@
     }
     .select-section select{
         padding: 0px 0px;
+    }
+    #day,#day1,#month1,#month{
+        width: 30px!important;
+        padding-left: 4px;
+    }
+    #year1,#year{
+        width: 39px;
+        margin-right: 3px;
+        margin-left: 5px;
+    }
+    #day1,#month1,#year1{
+        font-size: 12px;
     }
     .section-img{
         width: 95%;
