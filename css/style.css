@@ -2372,6 +2372,47 @@ a:hover{
 .people-services{
     border: 1px solid #8a7e7e;;
 }
+.place-services{
+   padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #8a7e7e;;
+}
+.places-head{
+    font-weight: bold;
+}
+.places-add{
+    margin-top: -34px!important;
+}
+.input-search-div{
+    background-color: transparent;
+    border: 1px solid #9ba4be;
+    border-radius: 3px;
+    padding: 4px 24px;
+    margin-right: 33px;
+    float: right;
+    margin-top: -42px;
+}
+.input-search-div{
+    color: #9cabb8;
+}
+.input-search-div input{
+    background-color: transparent;
+    border: none;
+    color: #9cabb8;
+}
+.input-search-div input::placeholder{
+    font-style: italic;
+    color: #9cabb8;
+
+}
+.input-search-div input:focus{
+    outline: none;
+}
+.my-places{
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
 /*********************************
 "About" css ends
 **********************************/
