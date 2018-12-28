@@ -329,8 +329,9 @@
         /*display: none;*/
     }
     .popup-overlay.active{
-        width: 289px;
-        top: -81px;
+        /*width: 289px;*/
+        /*top: -81px;*/
+        width: 100%;
     }
     #upload-inside-div{
         left: 40px;
@@ -356,7 +357,7 @@
         font-size: 14px;
     }
     .post-section .btn-green{
-        width: 70px;
+        width: 100%;
         padding-top: 10px;
         font-size: 14px;
     }

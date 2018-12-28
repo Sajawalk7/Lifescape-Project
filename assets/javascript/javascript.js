@@ -282,14 +282,28 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $('.open').click(function () {
+
+       $('#open').toggle();
+    })
+
+})
 
 
+$(document).ready(function () {
+    $('.close').click(function () {
 
-$(document).ready(function(){
-    $('s').click(function(){
-        $(this).toggleClass('open');
-    });
-});
+        $('#open').toggle();
+    })
+
+})
+
+// $(document).ready(function(){
+//     $('s').click(function(){
+//         $(this).toggleClass('open');
+//     });
+// });
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");

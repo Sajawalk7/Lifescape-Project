@@ -127,6 +127,12 @@ input[type=file]::-webkit-file-upload-button{
     display: none!important;
 
 }
+.file-upload:focus{
+    outline:none!important;
+}
+/*.pop-up-col{*/
+    /*margin-top: 149px;*/
+/*}*/
 .people-search-div{
     display: none;
 }
@@ -597,6 +603,9 @@ input[type=file]::-webkit-file-upload-button{
     font-style: normal;
     border-radius:2px;
 }
+.middle-container .input-section input[type=text]:focus{
+    outline:none!important;
+}
 .middle-container .input-container .heart{
     width: 60px;
     height: 50px;
@@ -863,13 +872,20 @@ input[type=file]::-webkit-file-upload-button{
 }
 #year{
 border-left: none;
+    -webkit-appearance: none;
+    /*background-image: url("../assets/images/br_nav-drop.png");*/
+}
+#year:after{
+    content: url("../assets/images/br_nav-drop.png");
 }
 #month{
    border-left: none;
    border-right: none;
+    -webkit-appearance: none;
 }
 #day{
    border-right: none;
+    -webkit-appearance: none;
 }
 /* post container start */
 .post-container{
@@ -2327,7 +2343,7 @@ a:hover{
     position: relative;
     width: 556px;
     left: 0px;
-    margin-top: -26.5%;
+    /*margin-top: -26.5%;*/
   }
   
   .popup-content {
@@ -2346,6 +2362,10 @@ a:hover{
   .add-close button.close{
     margin-top: -20px;
   }
+.add-close button.close:focus{
+    outline: none;
+}
+
   /* button{
     display:inline-block;
     vertical-align:middle;
