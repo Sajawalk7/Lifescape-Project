@@ -567,6 +567,10 @@ input[type=file]::-webkit-file-upload-button{
 .content-profile .profile-other div:nth-child(2) h1{
     font-size:13px;
 }
+.content-profile .profile-other div:nth-child(2) h1:hover{
+    cursor: pointer;
+    color: #1d9be3;
+}
 .content-profile .img-text div:nth-child(2) h3 span{
     font-size:13px;
     color:#969696;
@@ -1157,7 +1161,7 @@ border-left: none;
     border-right: 1px solid #8a7e7e;
     border-bottom: 1px solid#8a7e7e ;
     border-left: 1px solid #8a7e7e;
-    box-shadow: 0px 5px 9px #dcd6d6;
+    box-shadow: 0px 3px 7px #dcd6d6;
 
 
 }
@@ -2238,6 +2242,9 @@ a:hover{
     background: #ffffff;
 
 }
+.places-wrapper{
+    margin-top: 13px!important;
+}
 .about .post-container .middle-container {
     padding: 18px 40px 20px 30px;
 }
@@ -2320,7 +2327,7 @@ a:hover{
     padding: 24px;
     border: 1px solid #dadada;
     border-top: 0;
-    width: 99.7%;
+    width: 100%;
 }
 .about .invite-friends .content-p{
     width: 100%!important;
@@ -2339,6 +2346,11 @@ a:hover{
     padding: 0;
     width: 35%;
     margin-left: 28px;
+
+}
+.about .invite-friends .col-content:hover {
+    box-shadow: 0px 3px 7px #dcd6d6;
+    height: 100%;
 }
 .places-add{
     /* margin-bottom: -4px; */
@@ -2412,7 +2424,7 @@ a:hover{
     background-color: transparent;
     border: 1px solid #9ba4be;
     border-radius: 3px;
-    padding: 4px 24px;
+    padding: 4px 7px;
     float: right;
     margin-top: -47px;
 }
@@ -2423,6 +2435,7 @@ a:hover{
     background-color: transparent;
     border: none;
     color: #9cabb8;
+    width: 160px;
 }
 .input-search-div input::placeholder{
     font-style: italic;
@@ -2539,3 +2552,96 @@ a:hover{
  .friends-list{
      margin-top: 0px!important;
  }
+ .people-drop{
+
+     border: 1px solid #e0e0e0;
+     box-shadow: 0 0 2px 0 #dcd6d6;
+     position: absolute;
+     right: 5px;
+     margin-top: -19px;
+     z-index: 1;
+ }
+
+ .people-drop::after{
+     content: "";
+     width: 0;
+     height: 0;
+     position: absolute;
+     bottom: 100%;
+     right: 15px;
+     border-width: 0 6px 6px 6px;
+     border-style: solid;
+     border-color: #e0e0e0 transparent;
+ }
+ .people-drop li{
+     eight: 100%;
+     display: flex;
+     align-items: center;
+     border-left: 1px solid #e0e0e0;
+     border-bottom: none;
+     color: black;
+ }
+.people-drop li a{
+    color: black;
+}
+ .people-drop  li  {
+     text-decoration: none;
+     cursor: pointer;
+     display: flex;
+     color: #000;
+     padding: 5px 10px;
+     background: #fff;
+     font-size: 13px;
+ }
+ .people-drop li:hover{
+     background-color: #f7f7f7;
+     color: #000;
+ }
+#people-drop-1,#people-drop-2,#people-drop-3,#people-drop-4,#people-drop-5,#people-drop-6,
+#people-drop-7,#people-drop-8,#people-drop-9,#people-drop-10,#people-drop-11,#people-drop-12{
+    display: none;
+}
+.places-drop{
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 2px 0 #dcd6d6;
+    position: absolute;
+    right: 5px;
+    margin-top: 64px;
+    z-index: 1;
+}
+.places-drop li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #e0e0e0;
+    border-bottom: none;
+    color: black;
+    background: #ffffff;
+    padding: 5px 10px;
+}
+.places-drop::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 15px;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #e0e0e0 transparent;
+}
+.places-drop li a{
+    color: black;
+}
+
+#place-drop-1,#place-drop-2,#place-drop-3,#place-drop-4,#place-drop-5,#place-drop-6,
+#place-drop-7,#place-drop-8,#place-drop-9,#place-drop-10,#place-drop-11,#place-drop-12{
+    display: none;
+}
+.google-places{
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 0px;
+    padding-left: 26px;
+    padding-top: 28px;
+}

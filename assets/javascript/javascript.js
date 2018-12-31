@@ -102,7 +102,7 @@ $(".btn-click").click(function(){
     });
 
     $("body").mouseup(function(){
-        if(! mouse_is_inside) $('#moment').hide();
+        if(! mouse_is_inside) $('#moment,.people-drop,.places-drop').hide();
     });
     $('#moment').on('click',function () {
         $('#moment').show();
@@ -291,6 +291,7 @@ $(document).ready(function () {
 })
 
 
+
 $(document).ready(function () {
     $('.close').click(function () {
 
@@ -298,6 +299,17 @@ $(document).ready(function () {
     })
 
 })
+
+// $(document).ready(function () {
+//     $('#profile-dot').click(function () {
+//
+//         $('#people-drop').toggle();
+//     })
+//
+// })
+//
+
+
 
 // $(document).ready(function(){
 //     $('s').click(function(){
@@ -426,3 +438,80 @@ slider.oninput = function() {
     }
 
 }
+function PeopleFunction(val) {
+    if (val === 1){
+        $('#people-drop-1').toggle()
+    }
+    else if (val === 2){
+        $('#people-drop-2').toggle()
+    }
+    else if (val === 3){
+        $('#people-drop-3').toggle()
+    }
+    else if (val === 4){
+        $('#people-drop-4').toggle()
+    }
+    else if (val === 5){
+        $('#people-drop-5').toggle()
+    }
+
+    else if (val === 6){
+        $('#people-drop-6').toggle()
+    }
+    else if (val === 7){
+        $('#people-drop-7').toggle()
+    }
+    else if (val === 8){
+        $('#people-drop-8').toggle()
+    }
+    else if (val === 9){
+        $('#people-drop-9').toggle()
+    }
+
+}
+PeopleFunction(val);
+
+function PlaceFunction(val) {
+if (val === 1){
+    $('#place-drop-1').toggle()
+}
+else if (val === 2){
+    $('#place-drop-2').toggle()
+}
+else if (val === 3){
+    $('#place-drop-3').toggle()
+}
+else if (val === 4){
+    $('#place-drop-4').toggle()
+}
+else if (val === 5){
+    $('#place-drop-5').toggle()
+}
+
+else if (val === 6){
+    $('#place-drop-6').toggle()
+}
+else if (val === 7){
+    $('#place-drop-7').toggle()
+}
+else if (val === 8){
+    $('#place-drop-8').toggle()
+}
+else if (val === 9){
+    $('#place-drop-9').toggle()
+}
+else if (val === 10){
+    $('#place-drop-10').toggle()
+}
+else if (val === 11){
+    $('#place-drop-11').toggle()
+}
+else if (val === 12){
+    $('#place-drop-12').toggle()
+}
+
+
+}
+
+
+PlaceFunction(val);
