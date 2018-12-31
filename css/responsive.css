@@ -84,7 +84,7 @@
   }
 .header .profile-section{
   margin-top: 11px;
-  /*display: none;*/
+
 }
   @-webkit-keyframes fadeInDown {
     from {
@@ -203,9 +203,12 @@
 }
 .about .invite-friends .col-content {
     width: 100%;
-    margin-right: 20px;
+
     margin-bottom: 25px;
+
+
 }
+
 .about .invite-friends .col-content:nth-child(3) {
         height: 440px;
     width: 100%;
@@ -299,11 +302,17 @@
     display: flex;
     padding: 16px 0 5px;
     font-size: 11px;
-      margin-top: 35px;
+      margin-top: 50px;
+      justify-content: center;
+      align-items: center;
 
   }
+  .places-secondary{
+      margin-top: 80px!important;
+      justify-content: center!important;
+      align-items: center!important;
+  }
     .dropdown-container ul.drop{
-        /*right: -12px;*/
         min-width: 150px;
         margin-top: 10px;
         left: 18px!important;
@@ -322,15 +331,10 @@
         right: 11.5px!important;
     }
     .header .profile-section .profile-btn .profile-view{
-        /*margin-left: 16px!important;*/
+
         margin-left: -116px!important;
     }
-    .moment{
-        /*display: none;*/
-    }
     .popup-overlay.active{
-        /*width: 289px;*/
-        /*top: -81px;*/
         width: 100%;
     }
     #upload-inside-div{
@@ -416,7 +420,6 @@
   }
   .header .profile-section{
     margin-top: 70px;
-    /*display: none;*/
     z-index: 1;
       animation-name: fadeInDown;
   }
@@ -610,11 +613,52 @@ padding: 0;
     width: 100%;
     margin-right: 20px;
     margin-bottom: 25px;
+    margin-left: 0px;
+}
+.my-places{
+    padding-left: 0px;
+    font-size: 13px!important;
+}
+.about .invite-friends .col-md-4{
+    margin-left: 0px!important;
 }
 .about .invite-friends .col-content:nth-child(3) {
         height: 440px;
     width: 100%;
 }
+.frndz-btn,.grp-btn{
+    padding: 7px 18px!important;
+    font-size: 14px!important;
+    border-radius: 3px !important;
+    /* margin-top: 5px; */
+    margin-bottom: -2px;
+    margin-top: 50px;
+    margin-left: -10px;
+}
+.responsive-flex-ul{
+    display: flex;
+}
+.people-head{
+    position: absolute;
+    top:0;
+}
+    .about .invite-friends .col-content:nth-child(3){
+        height:100%!important;
+    }
+    .places-add{
+margin-top: 0px!important;
+
+    }
+    .places-head-container{
+        display: flex!important;
+        justify-content: center!important;
+    }
+    .places-head{
+        position: absolute;
+        top: 17px;
+        left: 17px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -630,7 +674,7 @@ padding: 0;
   }
   .header .primary-container .secondry-container {
     padding: 10px;
-/*    margin-left: 37px;*/
+
   }
   .middle-container .btn-and-icon ul li {
     margin-right: 15px;
@@ -691,6 +735,16 @@ padding: 0;
 .about .invite-friends .set-img {
     height: 150px;
 }
+    .frndz-btn{
+        padding: 7px 18px!important;
+        font-size: 14px!important;
+        border-radius: 3px !important;
+        /* margin-top: 5px; */
+        margin-bottom: -2px;
+    }
+.about .invite-friends .col-content{
+    margin-left: 0px!important;
+}
 
 }
 
@@ -699,6 +753,7 @@ padding: 0;
   .content-profile .img-text div:nth-child(1) {
     height: 57px;
   }
+
   .content-profile .img-text div:nth-child(2) {
     padding-left: 18px;
   }
@@ -730,7 +785,13 @@ padding: 0;
   font-size: 11px;
 }
 
-
+    .frndz-btn{
+        padding: 7px 18px!important;
+        font-size: 14px!important;
+        border-radius: 3px !important;
+        /* margin-top: 5px; */
+        margin-bottom: -2px;
+    }
 
 
 .about .post-container .middle-container {
@@ -759,4 +820,8 @@ padding: 0;
 
 
 }
-
+/*@media  (max-width: 812px) and  (min-width: 375px){*/
+    /*.frndz-btn{*/
+        /*margin-left: 24px;*/
+    /*}*/
+/*}*/
