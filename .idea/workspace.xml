@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3b31163e-ba63-4928-843f-78aefaa13292" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/people.html" afterPath="$PROJECT_DIR$/people.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/places.html" afterPath="$PROJECT_DIR$/places.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,8 +31,8 @@
       <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="619" column="30" lean-forward="false" selection-start-line="619" selection-start-column="30" selection-end-line="619" selection-end-column="30" />
+            <state relative-caret-position="276">
+              <caret line="880" column="26" lean-forward="false" selection-start-line="880" selection-start-column="26" selection-end-line="880" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -81,9 +76,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>main-div</find>
-      <find>.about .invite-friends .col-content:nth-child(3)</find>
-      <find>friends</find>
       <find>.people-services</find>
       <find>#day</find>
       <find>.about .invite-friends .set-img</find>
@@ -111,6 +103,9 @@
       <find>.places-add</find>
       <find>places-add</find>
       <find>1024</find>
+      <find>frndz-btn</find>
+      <find>.frndz-btn</find>
+      <find>.frndz-add</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -322,12 +317,12 @@
       <workItem from="1545644517729" duration="645000" />
       <workItem from="1545906530149" duration="33322000" />
       <workItem from="1546172241293" duration="720000" />
-      <workItem from="1546247041584" duration="8781000" />
+      <workItem from="1546247041584" duration="12972000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106867000" />
+    <option name="totallyTimeSpent" value="111058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
@@ -339,7 +334,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32333332" sideWeight="0.49402985" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32333332" sideWeight="0.49402985" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -807,8 +802,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="619" column="30" lean-forward="false" selection-start-line="619" selection-start-column="30" selection-end-line="619" selection-end-column="30" />
+        <state relative-caret-position="276">
+          <caret line="880" column="26" lean-forward="false" selection-start-line="880" selection-start-column="26" selection-end-line="880" selection-end-column="26" />
           <folding />
         </state>
       </provider>
