@@ -2242,6 +2242,10 @@ a:hover{
 .places-wrapper{
     margin-top: 13px!important;
 }
+.about-flex{
+    display: flex!important;
+    justify-content: space-between!important;
+}
 .about .post-container .middle-container {
     padding: 18px 40px 20px 30px;
 }
@@ -2316,6 +2320,7 @@ a:hover{
 }
 .about .invite-friends .main-row {
     display: flex;
+
 }
 .about .invite-friends .content{
     /*justify-content: space-between;*/
@@ -2327,10 +2332,13 @@ a:hover{
     width: 100%;
 }
 .about .invite-friends .content-p{
-    width: 100%!important;
+    /*width: 100%!important;*/
 
 }
-
+.places-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
 .about .invite-friends .content span:nth-child(1){
     font-size: 18px;
     font-weight: 500;
@@ -2342,7 +2350,7 @@ a:hover{
 .about .invite-friends .col-content{
     background: #ffffff;
     padding: 0;
-    width: 35%;
+    width: 30%;
     margin-left: 28px;
 
 }
@@ -2610,7 +2618,7 @@ a:hover{
     box-shadow: 0 0 2px 0 #dcd6d6;
     position: absolute;
     right: 5px;
-    margin-top: 64px;
+    margin-top: 39px;
     z-index: 1;
 }
 .places-drop li{
@@ -2754,4 +2762,7 @@ a:hover{
     padding: 8px 50px;
     margin-top: 30px;
     border-radius: 5px;
+}
+#modal-content{
+    top:60px;
 }
