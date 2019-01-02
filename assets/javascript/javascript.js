@@ -467,6 +467,18 @@ function PeopleFunction(val) {
     else if (val === 9){
         $('#people-drop-9').toggle()
     }
+    else if (val === 10){
+        $('#people-drop-10').toggle()
+    }
+
+    else if (val === 11){
+        $('#people-drop-11').toggle()
+    }
+
+    else if (val === 12){
+        $('#people-drop-12').toggle()
+    }
+
 
 }
 PeopleFunction(val);

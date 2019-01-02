@@ -305,7 +305,7 @@
       margin-top: 50px;
       justify-content: center;
       align-items: center;
-
+ 
   }
   .places-secondary{
       margin-top: 80px!important;
@@ -606,9 +606,7 @@ padding: 0;
 .about .invite-friends .main-row {
     flex-direction: column;
 }
-.about .invite-friends .set-img {
-    height: 100%;
-}
+
 .about .invite-friends .col-content {
     width: 100%;
     margin-right: 20px;
@@ -670,7 +668,9 @@ margin-top: 0px!important;
         top: 17px;
         left: 17px;
     }
-
+.about .invite-friends .set-img {
+    height: 340px;
+}
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -686,8 +686,62 @@ margin-top: 0px!important;
   }
   .header .primary-container .secondry-container {
     padding: 10px;
-
+    margin-top: 3px;
   }
+  .header .profile-section ul li.search {
+    padding: 0px 31px 0px 1px!important;
+    position: absolute;
+    top: 0;
+    right: 152px;
+}
+.header .profile-section ul li .btn {
+    position: absolute;
+    width: 60px;
+    height: 59px;
+    right: -22px;
+    top: 7px;
+}
+.header .profile-section ul li .search-box {
+        background: #ffffff;
+    height: 69px;
+}
+.header .profile-section ul li {
+    height: auto;
+        padding: 23px 8px;
+}
+.header .profile-section ul li:last-child {
+    padding: 17px 4px;
+}
+.header .profile-section ul li .input {
+    top: 6px;
+    right: -12px;
+}
+.notification-section {
+    width: 321px;
+    right: -10rem;
+}
+.notification-section:before {
+       right: 10.7rem;
+}
+.notification-box {
+    padding: 7px 15px 7px 15px;
+}
+.notification-box .image-area img {
+    width: 35px;
+    height: 35px;
+}
+.notification-box .middle-area h5 {
+    font-size: 10px;
+}
+.notification-box .middle-area p {
+    font-size: 8px;
+}
+.notification-box .middle-area .year p {
+    font-size: 8px;
+}
+.notification-section:after {
+right: 10.9rem;
+}
   .middle-container .btn-and-icon ul li {
     margin-right: 15px;
   }
@@ -753,17 +807,84 @@ margin-top: 0px!important;
         border-radius: 3px !important;
         /* margin-top: 5px; */
         margin-bottom: -2px;
-
-
-
     }
 .about .invite-friends .col-content{
     margin-left: 0px!important;
 }
-
+ .popup-overlay.active{
+        width: 100%;
+    }
+    #upload-inside-div{
+        left: 40px;
+    }
+    #upload-inside-div p{
+        font-size: 8px!important;
+    }
+    .middle-container .dropdown-icons div span{
+        margin-right: 18px;
+        margin-left: 18px;
+    }
+    .post-section .btn-post1{
+        width: 72.5px;
+        font-size: 12px;
+    }
+    .post-section .btn-post1 i{
+        margin: 3px 4px 3px 0px;
+    }
+    .btn-post1 .fa-angle-down{
+        margin-left: 4px!important;
+    }
+    .middle-container .input-section input[type=text]{
+        font-size: 13px;
+    }
+    .post-section .btn-green{
+        width: 100%;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+    .post-section .btn-green i{
+        margin-left: 10px;
+    }
+    .btn-drop{
+        width: 289px;
+        left: -15px;
+    }
+    #upload-inside-div p span{
+        font-size: 10px!important;
+    }
+    .select-section select{
+        padding: 0px 0px;
+    }
+    #day,#day1,#month1,#month{
+        width: 30px!important;
+        padding-left: 4px;
+    }
+    #year1,#year{
+        width: 39px;
+        margin-right: 3px;
+        margin-left: 5px;
+    }
+    #day1,#month1,#year1{
+        font-size: 12px;
+    }
+    .section-img{
+        width: 95%;
+    }
+    .services-section{
+        width: 95%;
+    }
+    .search-sort-two{
+        bottom: 130px;
+    }
+    .search-sort{
+        bottom: 130px;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
+  .header .profile-section ul li.search {
+    right: 195px;
+}
     /* home.html responsive */
   .content-profile .img-text div:nth-child(1) {
     height: 57px;
@@ -823,15 +944,24 @@ margin-top: 0px!important;
     height: 190px;
 }
 .header .profile-section ul li {
-    padding: 10px 18px;
+        padding: 22px 18px;
 }
 .header .profile-section ul li:last-child {
-    padding: 10px 10px;
+    padding: 16px 10px;
 }
 .about .invite-friends .col-content {
     margin-right: 30px;
 }
-
+.notification-section {
+    width: 330px;
+    right: -13rem;                       
+}
+.notification-section:before {
+    right: 13.7rem;
+}
+.notification-section:after {
+    right: 13.9rem;
+}
 
 
 }
@@ -870,13 +1000,3 @@ margin-top: 0px!important;
         padding: 7px 6px!important;
     }
 }
-@media  (max-width: 400px) and  (min-width: 375px){
-.grp-btn{
-    margin-left: 2px!important;
-}
-
-}
-@media  (max-width: 600px) and  (min-width: 414px){
-    .grp-btn{
-        margin-left:-3px!important;
-    }}

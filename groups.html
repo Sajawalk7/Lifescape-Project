@@ -15,6 +15,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <!--<script src="assets/javascript/javascript.js"></script>-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 <body id="about">
@@ -486,7 +489,7 @@
 <section class="services-section people-services">
     <div class="container">
         <div class="top-navigation people-navigation">
-            <h4 class="people-head">People</h4>
+            <h4 class="people-head">Groups</h4>
             <ul class="responsive-flex-ul">
                 <li><a href="#">
                     <button class="btn-dropdown btn-blue btn-search frndz-btn">My Friends</button>
@@ -513,15 +516,18 @@
             <div>
                 <div class="profile-main-wrapper page-two">
                     <div class="img-text-outer">
-                        <h1>Suggested Friends</h1>
+                        <div class="group-flex">
+                            <h1>Suggested Groups</h1>
+                        <button class="add-grp-btn" data-toggle="modal" data-target="#myModal-add">+</button>
+                        </div>
                         <div class="content-profile">
                             <div class="img-text profile-other">
                                 <div>
                                     <img src="assets/images/men.jpg">
                                 </div>
                                 <div>
-                                    <h1>Smith</h1>
-                                    <h3><a href="#">Add Friend</a></h3>
+                                    <h1>Family</h1>
+                                    <h3><a href="#">Join Group</a></h3>
                                 </div>
                             </div>
                             <div class="img-text profile-other">
@@ -529,8 +535,8 @@
                                     <img src="assets/images/men.jpg">
                                 </div>
                                 <div>
-                                    <h1>Smith</h1>
-                                    <h3><a href="#">Add Friend</a></h3>
+                                    <h1>Friends</h1>
+                                    <h3><a href="#">Join Group</a></h3>
                                 </div>
                             </div>
                             <div class="img-text profile-other">
@@ -538,37 +544,11 @@
                                     <img src="assets/images/men.jpg">
                                 </div>
                                 <div>
-                                    <h1>Smith</h1>
-                                    <h3><a href="#">Add Friend</a></h3>
+                                    <h1>Public</h1>
+                                    <h3><a href="#">Join Group</a></h3>
                                 </div>
                             </div>
-                            <div class="img-text profile-other">
-                                <div>
-                                    <img src="assets/images/men.jpg">
-                                </div>
-                                <div>
-                                    <h1>Smith</h1>
-                                    <h3><a href="#">Add Friend</a></h3>
-                                </div>
-                            </div>
-                            <div class="img-text profile-other">
-                                <div>
-                                    <img src="assets/images/men.jpg">
-                                </div>
-                                <div>
-                                    <h1>Smith</h1>
-                                    <h3><a href="#">Add Friend</a></h3>
-                                </div>
-                            </div>
-                            <div class="img-text profile-other">
-                                <div>
-                                    <img src="assets/images/men.jpg">
-                                </div>
-                                <div>
-                                    <h1>Smith</h1>
-                                    <h3><a href="#">Add Friend</a></h3>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -585,7 +565,7 @@
                             <div class="content content-people ">
                                 <p class="friend-date">1973 - Now</p>
                                 <div class="friend-name-icon">
-                                <span class="friend-name">Paul</span>
+                                    <span class="friend-name">Paul</span>
                                     <span><i class="fa fa-ellipsis-v popup-dots" id="profile-dot" onclick="PeopleFunction(1)"></i></span></div>
                             </div>
                             <div class="friend-post">
@@ -593,10 +573,10 @@
                                     <p>19</p>
                                     <span>moments</span>
                                 </div>
-                                 <div class="post-count">
-                                     <p>0</p>
-                                     <span>photos</span>
-                                 </div>
+                                <div class="post-count">
+                                    <p>0</p>
+                                    <span>photos</span>
+                                </div>
                             </div>
                             <ul class="people-drop" id="people-drop-1">
                                 <li ><a href="#">View Profile</a></li>
@@ -923,6 +903,45 @@
         </div>
     </div>
 </section>
+
+                                            <!--******add group modal******-->
+
+<div class="container">
+    <h2>Large Modal</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal-add" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header modal-t-header">
+                    <button type="button" class="close" data-dismiss="modal" id="cross-close">&times;</button>
+                    <h4 class="modal-title">Create Group</h4>
+                </div>
+                <div class="modal-body">
+                   <div class="grp-modal-content">
+                       <p class="group-heading">Group Name</p>
+                       <input class="group-inputs" type="text" />
+                       <p class="group-heading">Group Description</p>
+                       <textarea class="group-inputs" type="text" ></textarea>
+                       <p class="group-heading">Group people</p>
+                       <input class="group-inputs" type="text" placeholder="Search People(s)"/><br/>
+                       <button class="group-submit">Submit</button>
+
+
+
+
+                   </div>
+                </div>
+                <!--<div class="modal-footer">-->
+                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="assets/javascript/javascript.js"></script>
 </body>
 </html>
