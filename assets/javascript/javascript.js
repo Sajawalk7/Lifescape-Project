@@ -172,7 +172,7 @@ $(".btn-click").click(function(){
 
 $(document).ready(function(){
 
-dpick('#year','#month','#day',1);
+dpick('#year','#year1','#month','#day',1);
 });
 
 function dpick(year,month,day,td){

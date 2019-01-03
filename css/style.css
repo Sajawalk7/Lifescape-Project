@@ -2326,7 +2326,7 @@ a:hover{
     /*justify-content: space-between;*/
     /*display: flex;*/
     /*align-items: center;*/
-    padding: 24px;
+    padding: 18px;
     border: 1px solid #dadada;
     border-top: 0;
     width: 100%;
@@ -2348,14 +2348,19 @@ a:hover{
     color: #1d9be3;
 }
 .about .invite-friends .col-content{
-    background: #ffffff;
-    padding: 0;
-    width: 30%;
-    margin-left: 28px;
+    /*background: #ffffff;*/
+    /*padding: 0;*/
+    /*width: 30%;*/
+    /*margin-left: 28px;*/
+    padding-right: 0px;
 
 }
+.cards-content:hover{
+    box-shadow: 1px 1px 13px #dcd6d6;
+}
+
 .about .invite-friends .col-content:hover {
-    box-shadow: 0px 3px 7px #dcd6d6;
+    /*box-shadow: 0px 3px 7px #dcd6d6;*/
     height: 100%;
 }
 .places-add{
@@ -2378,9 +2383,14 @@ a:hover{
     padding: 11px!important;
     border-bottom: none!important;
     padding-bottom: 0px!important;
+    background-color: white;
+
 }
 .content-people-box{
     margin-bottom: 33px;
+
+
+
 }
 
 /*.about .invite-friends .col-content:nth-child(3){*/
@@ -2684,6 +2694,7 @@ a:hover{
     border-top: none;
     padding: 11px;
     padding-top: 0px!important;
+    background-color: white;
 }
 .moment-count,.post-count
      {
@@ -2710,6 +2721,7 @@ a:hover{
 }
 .flex-adress{
     display:flex!important;
+    background-color: white;
 }
 .group-flex{
     display:flex;
@@ -2765,4 +2777,21 @@ a:hover{
 }
 #modal-content{
     top:60px;
+}
+.places-wrap-card{
+    margin-bottom: 28px;
+
+}
+
+.wrap-cards{
+    flex-wrap: wrap;
+}
+.about-cards{
+    margin-right: 42px!important;
+}
+.cards-content-2:hover .flex-adress{
+    box-shadow: 1px 1px 13px #dcd6d6;
+}
+.cards-content-2:hover .img-responsive{
+    box-shadow: 1px 1px 13px #dcd6d6;
 }

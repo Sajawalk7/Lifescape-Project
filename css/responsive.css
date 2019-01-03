@@ -615,6 +615,7 @@ padding: 0;
     margin-right: 20px;
     margin-bottom: 25px;
     margin-left: 0px;
+    padding-left: 0;
 }
 .my-places{
     padding-left: 0px;
@@ -705,8 +706,9 @@ margin-top: 0px!important;
       flex-wrap: wrap;
   }
      .places-wrap-card{
-     margin-left: 97px!important;
+     margin-left: 2px!important;
          margin-bottom: 20px;
+         margin-right: 0px!important;
     }
 .header .profile-section ul li .btn {
     position: absolute;
@@ -810,14 +812,18 @@ right: 10.9rem;
     margin-top: 25px;
 }
 .about .invite-friends .col-content {
-    margin-right: 20px;
+    /*margin-right: 20px;*/
+    width: 33%;
+}
+.flex-adress{
+    padding: 13px!important;
 }
 .about .invite-friends .set-img {
     /*height: 150px;*/
 }
 
     .content-people-box{
-      margin-left: 54px!important;
+      margin-left: 1px!important;
 
     }
     .wrap-cards{
@@ -831,9 +837,10 @@ right: 10.9rem;
         /* margin-top: 5px; */
         margin-bottom: -2px;
     }
-.about .invite-friends .col-content{
-    /*margin-left: 0px!important;*/
-}
+    .about .invite-friends .content span:nth-child(2){
+        margin-left: 11px;
+    }
+
  .popup-overlay.active{
         width: 100%;
     }
@@ -960,12 +967,12 @@ right: 10.9rem;
     font-size: 14px;
     margin-right: 24px;
 }
-.about .invite-friends .set-img {
-    height: 190px;
-}
-.about .invite-friends .set-img {
-    height: 190px;
-}
+/*.about .invite-friends .set-img {*/
+    /*height: 190px;*/
+/*}*/
+/*.about .invite-friends .set-img {*/
+    /*height: 190px;*/
+/*}*/
 .header .profile-section ul li {
         padding: 22px 18px;
 }
@@ -973,7 +980,7 @@ right: 10.9rem;
     padding: 16px 10px;
 }
 .about .invite-friends .col-content {
-    margin-right: 30px;
+    margin-right: 1px;
 }
 .notification-section {
     width: 330px;
@@ -993,6 +1000,9 @@ right: 10.9rem;
         padding: 7px 12px!important;
         position: absolute;
         right: 25px;
+    }
+    .places-add{
+        top: 118px!important;
     }
 }
 @media  (max-width: 640px) and  (min-width: 360px){
@@ -1023,3 +1033,13 @@ right: 10.9rem;
         padding: 7px 6px!important;
     }
 }
+@media (max-width: 1000px) and (min-width: 768px){
+    .places-drop{
+        right: -11px!important;
+    }
+}
+/*@media (max-width: 1030px) and (min-width: 1024px){*/
+    /*.places-wrap-card{*/
+        /*margin-left: 23px!important;*/
+    /*}*/
+/*}*/
