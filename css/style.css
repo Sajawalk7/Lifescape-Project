@@ -2767,3 +2767,18 @@ activity-section css
 .activity-section {
     padding: 40px 0;
 }
+.activity-btn{
+    background: transparent;
+    border: 1px solid #8d9299;
+    color: #ffffff;
+    min-width: 169px;
+    padding: 6px 18px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
