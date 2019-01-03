@@ -2759,3 +2759,11 @@ a:hover{
 #modal-content{
     top:60px;
 }
+
+
+/********************
+activity-section css
+*********************/
+.activity-section {
+    padding: 40px 0;
+}
