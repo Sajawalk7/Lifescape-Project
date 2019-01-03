@@ -115,17 +115,12 @@ body{
     outline: none;
     margin-top:12px;
     cursor: pointer;
-
     border: 1px dashed #454545;
     z-index: 1;
-
     position: relative;
-
-
 }
 input[type=file]::-webkit-file-upload-button{
     display: none!important;
-
 }
 .file-upload:focus{
     outline:none!important;
@@ -156,7 +151,6 @@ input[type=file]::-webkit-file-upload-button{
     padding: 7px 9px;
     margin-top: 15px;
     background-color: whitesmoke;
-
 }
 .search-sort{
     position: absolute;
@@ -237,7 +231,6 @@ input[type=file]::-webkit-file-upload-button{
     padding: 19px 10px 19px 10px;
 }
 .header .primary-container .secondry-container span{
-
 }
 .header .primary-container .secondry-container{
     margin-left:11px;
@@ -265,7 +258,7 @@ input[type=file]::-webkit-file-upload-button{
     height: 70px;
     position: relative;
   }
-  
+
   .header .profile-section ul li .input {
     position: relative;
       top: 6px;
