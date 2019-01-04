@@ -2778,7 +2778,21 @@ activity-section css
     align-items: center;
     justify-content: space-between;
 }
-
+.activity-section .year{
+    font-size: 18px;
+    padding-left: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+.activity-section .content-profile .img-text div:nth-child(2) h1 {
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 23px;
+}
+.activity-section .post-container .content-profile .img-text div:nth-child(2) h3 {
+    margin-top: 13px;
+}
 
 
 
