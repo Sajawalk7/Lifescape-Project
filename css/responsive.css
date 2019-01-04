@@ -203,16 +203,40 @@
 }
 .about .invite-friends .col-content {
     width: 100%;
-
     margin-bottom: 25px;
-
-
 }
 
 .about .invite-friends .col-content:nth-child(3) {
-        height: 440px;
+    height: 440px;
     width: 100%;
 }
+/*****************************************
+ activity-section css RECENT ACTIVITY PAGE
+ ******************************************/
+    .section-filters .filter-txt {
+        align-items: center;
+        flex-direction: column;
+    }
+    .section-filters .days-wrapper .btn-white {
+        margin-right: 4px;
+    }
+    .section-filters .days-wrapper {
+        display: flex;
+        margin: 20px 4px;
+    }
+    .section-filters .filter-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .activity-section .year {
+        text-align: center;
+    }
+    .header .primary-container {
+        flex-direction: column;
+    }
+
 }
 @media  (max-width: 479px) and  (min-width: 320px)  {
 
@@ -614,14 +638,14 @@ padding: 0;
     width: 100%;
     margin-right: 20px;
     margin-bottom: 25px;
-    margin-left: 0px;
+    margin-left: 0;
 }
 .my-places{
-    padding-left: 0px;
+    padding-left: 0;
     font-size: 13px!important;
 }
 .about .invite-friends .col-md-4{
-    margin-left: 0px!important;
+    margin-left: 0!important;
 }
 .flex-adress{
     justify-content: space-between;
@@ -677,8 +701,86 @@ margin-top: 0px!important;
 .about .invite-friends .set-img {
     /*height: 340px;*/
 }
-}
 
+  /*****************************************
+   activity-section css RECENT ACTIVITY PAGE
+   ******************************************/
+    .section-filters .filter-txt {
+        align-items: center;
+        flex-direction: column;
+    }
+    .section-filters .days-wrapper .btn-white {
+        margin-right: 4px;
+    }
+    .section-filters .days-wrapper {
+        display: flex;
+        margin: 20px 4px;
+    }
+    .section-filters .filter-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .activity-section .year {
+        text-align: center;
+    }
+    .content-profile .img-text div:nth-child(2) {
+        padding-left: 12px;
+    }
+    .content-profile .img-text div:nth-child(2) h1 {
+        font-size: 12px;
+    }
+    .activity-section .content-profile .img-text div:nth-child(2) h1 {
+        line-height: 22px;
+    }
+    .activity-section .post-container .content-profile .img-text div:nth-child(2) h3 {
+        margin-top: 16px;
+    }
+    .activity-section .post-container .content-profile .img-text div:nth-child(2) h3 {
+        margin-top: 16px;
+    }
+    .content-profile .img-text div:nth-child(2) h3 {
+        font-size: 10px;
+    }
+    .post-container .content-profile .img-text span:last-child {
+        margin-left: 10px;
+    }
+    .content-profile .img-text div:nth-child(2) h3 span {
+        font-size: 9px;
+    }
+    .post-container .comment-like li a {
+        font-size: 12px;
+    }
+    .middle-container input[type=text] {
+        height: 45px;
+        padding: 14px;
+        font-size: 13px;
+    }
+    .middle-container .input-container .heart {
+        height: 45px;
+        margin-left: 15px;
+    }
+    .middle-container .input-container .heart .fa-heart {
+        font-size: 16px;
+    }
+    .middle-container .input-container .heart span {
+        font-size: 13px;
+        margin-top: 0;
+    }
+    .middle-container .input-container .angle-down {
+        height: 45px;
+    }
+    .middle-container .input-container .angle-down .fa-angle-down {
+        font-size: 24px;
+    }
+    .middle-container p {
+        font-size: 11px;
+    }
+    .middle-container .input-container .dropdown-container ul.drop {
+        left: 50%!important;
+    }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
     /* home.html responsive */
   .header .profile-section ul li {

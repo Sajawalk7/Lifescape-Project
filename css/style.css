@@ -2765,24 +2765,27 @@ a:hover{
 activity-section css
 *********************/
 .activity-section {
-    padding: 40px 0;
+    padding: 20px 0;
 }
 .activity-btn{
     background: transparent;
     border: 1px solid #8d9299;
     color: #ffffff;
     min-width: 169px;
-    padding: 6px 18px;
+    padding: 6px 10px;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.activity-btn .angle-down-icon{
+    font-size: 18px;
+}
 .activity-section .year{
     font-size: 18px;
     padding-left: 15px;
     font-weight: bold;
-    margin: 0;
+    margin-bottom: 0;
 }
 .activity-section .content-profile .img-text div:nth-child(2) h1 {
     margin: 0;
@@ -2792,6 +2795,9 @@ activity-section css
 }
 .activity-section .post-container .content-profile .img-text div:nth-child(2) h3 {
     margin-top: 13px;
+}
+.activity-section .m-t{
+    margin-top: 6rem;
 }
 
 
