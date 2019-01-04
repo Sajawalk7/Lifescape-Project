@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b31163e-ba63-4928-843f-78aefaa13292" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recentactivity.html" beforeDir="false" afterPath="$PROJECT_DIR$/recentactivity.html" afterDir="false" />
-    </list>
+    <list default="true" id="3b31163e-ba63-4928-843f-78aefaa13292" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -26,10 +23,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recentactivity.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="738" column="14" lean-forward="true" selection-start-line="738" selection-start-column="14" selection-end-line="738" selection-end-column="14" />
+            <state relative-caret-position="348">
+              <caret line="619" column="54" lean-forward="true" selection-start-line="619" selection-start-column="54" selection-end-line="619" selection-end-column="54" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -184,16 +180,15 @@
       <workItem from="1546428171978" duration="17394000" />
       <workItem from="1546517824531" duration="11275000" />
       <workItem from="1546579781912" duration="1190000" />
-      <workItem from="1546584977807" duration="2475000" />
+      <workItem from="1546584977807" duration="2728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164482000" />
+    <option name="totallyTimeSpent" value="164735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1300" height="740" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15241936" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -341,10 +336,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/recentactivity.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="738" column="14" lean-forward="true" selection-start-line="738" selection-start-column="14" selection-end-line="738" selection-end-column="14" />
+        <state relative-caret-position="348">
+          <caret line="619" column="54" lean-forward="true" selection-start-line="619" selection-start-column="54" selection-end-line="619" selection-end-column="54" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" />
           </folding>
