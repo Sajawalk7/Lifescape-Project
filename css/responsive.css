@@ -706,10 +706,11 @@ margin-top: 0px!important;
       flex-wrap: wrap;
   }
      .places-wrap-card{
-     margin-left: 2px!important;
+     margin-left: 7px!important;
          margin-bottom: 20px;
          margin-right: 0px!important;
     }
+
 .header .profile-section ul li .btn {
     position: absolute;
     width: 60px;
@@ -813,7 +814,7 @@ right: 10.9rem;
 }
 .about .invite-friends .col-content {
     /*margin-right: 20px;*/
-    width: 33%;
+    width: 32%;
 }
 .flex-adress{
     padding: 13px!important;
