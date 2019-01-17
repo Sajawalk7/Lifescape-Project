@@ -12,7 +12,19 @@ $(".btn-clicked").click(function(){
     $('.drop2').fadeOut();
     $(this).parent().find('.drop2').toggle();
 });
-
+// right sidebar j-query
+$(".chat-user .author-thumb, .author-name, .olympus-chat, .little-delete, .start-con, .block-con, .add-con").click(function(){
+    $('.my-popup').slideToggle(400); 
+});
+$("#olymp-menu-icon").click(function(){
+    $('#small-bar').hide(100);
+    $('#large-bar').show(500); 
+});
+$("#olymp-close-icon").click(function(){
+    $('#large-bar').hide(500);
+    $('#small-bar').show(800); 
+});
+// right sidebar j-query
 $(document).on("click", function(event){
     var $trigger = $(".btn-clicked");
     if($trigger !== event.target && !$trigger.has(event.target).length){
