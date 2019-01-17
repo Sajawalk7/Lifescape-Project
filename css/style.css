@@ -3315,3 +3315,63 @@ text-align: center;
     padding: 4px 5px;
     border-radius: 3px;
 }
+/* account page start */
+.account-heading{
+    padding: 18px 30px;
+}
+.account-heading h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+.account-image img{
+    width: 100%;
+}
+.account-change-btn{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+.account-form p{
+    font-size: 12px;
+    padding: 0 0 0 40px;
+}
+.account-form input{
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    width: 32%;
+}
+.account-arrow-div{
+    position: relative;
+}
+.account-arrow{
+    position: absolute;
+    top:14px;
+    left: 34%;
+}
+.account-arrow-2{
+    position: absolute;
+    top: 16%;
+    right: 29%;
+}
+.account-handle-text{
+    padding: 10px 0px 20px 38px;
+    font-size: 30px;
+}
+.account-handle-text h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+.account-bottom-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 39%;
+}
+.account-bottom-btn button{
+    padding: 7px 45px!important;
+}
+/* account page end */
