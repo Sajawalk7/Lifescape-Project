@@ -236,9 +236,6 @@ input[type=file]::-webkit-file-upload-button{
 .header .primary-container .secondry-container{
     padding: 19px 10px 19px 10px;
 }
-.header .primary-container .secondry-container span{
-
-}
 .header .primary-container .secondry-container{
     margin-left:11px;
 }
@@ -311,9 +308,6 @@ input[type=file]::-webkit-file-upload-button{
 .header .profile-section ul li .fa{
     font-size:20px;
     cursor: pointer;
-}
-.header .profile-btn{
-   /* margin-left:10px;*/
 }
 .header .profile-section ul li:last-child{
     border-right: 1px solid #e0e0e0;
@@ -753,10 +747,6 @@ input[type=file]::-webkit-file-upload-button{
     border: 1px solid #198cce;
 }
 /*moment css*/
-.moment{
-   /*display: none;*/
-  
-}
 .dropdown-container ul.moment:before{
        right: 420px!important;
 }
@@ -922,9 +912,7 @@ input[type=file]::-webkit-file-upload-button{
     /* top: 21px; */
     margin-top: 21px;
 
-}.select-section i{
-
- }
+}
 #year{
 border-left: none;
     -webkit-appearance: none;
@@ -2372,10 +2360,6 @@ a:hover{
     border-top: 0;
     width: 100%;
 }
-.about .invite-friends .content-p{
-    /*width: 100%!important;*/
-
-}
 .places-wrap{
     display: flex;
     flex-wrap: wrap;
@@ -2523,6 +2507,8 @@ a:hover{
 
 .middle-container .input-container{
     display: flex;
+}
+.middle-container .input-with-button{
     background: #f9f8f8;
     border: 1px solid #dadada;
     font-style: normal;
