@@ -215,6 +215,16 @@
 }
 }
 @media  (max-width: 479px) and  (min-width: 320px)  {
+    /* account page responsive*/
+    .account-bottom-btn {
+        padding: 40px 0 40px 0;
+        width: 100%;
+    }
+    .account-bottom-btn .grp-btn {
+        margin-top: 0px;
+        margin-right: 6px;
+        padding: 0px 32px 0 32px !important;
+    }
 
   /* home.html responsive */
   .header .hamburger{
