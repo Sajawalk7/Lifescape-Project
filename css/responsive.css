@@ -678,6 +678,34 @@ margin-top: 0px!important;
 .about .invite-friends .set-img {
     /*height: 340px;*/
 }
+/* account page responsive */
+.account-form{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.account-form input {
+    margin-left: 0;
+    width: 100%;
+}
+.account-handle-text {
+    padding: 0 0 0 0;
+}
+.account-form p {
+    padding: 0 0 0 0;
+}
+.account-arrow-2 {
+    top: 35%;
+    right: 10%;
+}
+.account-arrow {
+    left: unset;
+    right: 6%;
+}
+.account-bottom-btn .grp-btn{
+    margin-top: 0px;
+    margin-right: 6px;
+}
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
