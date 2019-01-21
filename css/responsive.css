@@ -215,6 +215,50 @@
 }
 }
 @media  (max-width: 479px) and  (min-width: 320px)  {
+  
+  /* lifescape page */
+.triagle-container h6 {
+    left: -35px;
+    top: 0px;
+    font-size: 8px;
+}
+.outer-card {
+    flex-wrap: wrap;
+} 
+.outer-card>div {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+    /* recent activity  */
+  .post-container .content-profile .img-text span:last-child{
+    margin-left: 5px;
+    width: 100%;
+  }
+  .content-profile .img-text div:nth-child(2) h3 span {
+    width: 100%;
+}
+.content-profile .img-text div:nth-child(2) h3 b {
+    width: 100%;
+}
+.post-container .content-profile .img-text div:nth-child(2) h3 {
+    display: flex;
+}
+/* matrixV3 responsive */
+.years .list li {
+    margin-right: 8px;
+    font-size: 10px;
+    margin-left: 5px;
+}
+.matrix-v3 .main-div {
+    flex-direction: column;
+}
+.matrix-v3 .main-div >div:nth-child(1) {
+    width: 100%;
+}
+.matrix-v3 .main-div >div {
+    width: 100%;
+}
+   
     /* account page responsive*/
     .account-bottom-btn {
         padding: 40px 0 40px 0;
@@ -225,8 +269,59 @@
         margin-right: 6px;
         padding: 0px 32px 0 32px !important;
     }
-    
+    /* home two responsive */
+.content-section .content-inner{
+    flex-direction: column;
+}
+.content-section .content-inner >div {
+    width: 100%;
+}
+.content-section .content-inner >div:nth-child(2) {
+    margin: 0 0;
+}
+.middle-container input[type=text]{
+    width: 100%;
+}
+.home-two .middle-container .btn-and-icon{
+    display: flex;
+    flex-direction: column;
+}
+.home-two .dropdown-container{
+    margin-right: 0;
+}
+.responsive-post-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.home-two .content-profile .img-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-two article {
+    flex-direction: column;
+}
+.home-two article .text-day {
+    width: 100%!important;
+}
   /* home.html responsive */
+  .section-filters .filter-inner{
+    flex-direction: column;
+  }
+  .section-filters .filter-txt{
+    flex-direction: column;
+  }
+  .section-filters .days-wrapper{
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-filters .days-wrapper .btn-white {
+    margin: 5px 0;
+}
   .responsive-sidebar{
     display:block;
 }
@@ -705,7 +800,7 @@ margin-top: 0px!important;
     display: flex;
     flex-direction: column;
 }
-.account-form input {
+.account-form input, select {
     margin-left: 0;
     width: 100%;
 }
@@ -730,6 +825,11 @@ margin-top: 0px!important;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+   /* matrixV3 responsive */
+   .years .list li {
+    margin-right: 18px;
+    margin-left: 30px;
+}
     /* home.html responsive */
   .header .profile-section ul li {
            padding: 10px 8px;
@@ -845,6 +945,9 @@ right: 10.9rem;
   .description-text p {
     font-size: 9px;
   }
+  .section-filters .days-wrapper .btn-white {
+    margin-right: 0px;
+}
 
   /* about.html responsive */
 .about .post-container .middle-container {
