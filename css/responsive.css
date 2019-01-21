@@ -216,6 +216,20 @@
 }
 @media  (max-width: 479px) and  (min-width: 320px)  {
   
+
+/* lifescape page two */
+.lifescape-page-two .primary-container{
+    display: block;
+}
+.lifescape-page-two .primary-container >div:nth-child(1){
+    width: 100%;
+}
+.lifescape-page-two .primary-container >div{
+    width: 100%;
+}
+.circles-data >div:nth-child(1){
+ 
+}
   /* lifescape page */
 .triagle-container h6 {
     left: -35px;
