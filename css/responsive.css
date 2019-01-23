@@ -257,6 +257,9 @@
 .post-container .content-profile .img-text div:nth-child(2) h3 {
     display: flex;
 }
+.middle-container .btn-post {
+    padding: 6px 20px;
+}
 /* matrixV3 responsive */
 .years .list li {
     margin-right: 8px;
@@ -273,54 +276,17 @@
     width: 100%;
 }
    
-    /* account page responsive*/
-    .account-bottom-btn {
-        padding: 40px 0 40px 0;
-        width: 100%;
-    }
-    .account-bottom-btn .grp-btn {
-        margin-top: 0px;
-        margin-right: 6px;
-        padding: 0px 32px 0 32px !important;
-    }
+/* account page responsive*/
+.account-bottom-btn {
+    padding: 40px 0 40px 0;
+    width: 100%;
+}
+.account-bottom-btn .grp-btn {
+    margin-top: 0px;
+    margin-right: 6px;
+    padding: 0px 32px 0 32px !important;
+}
     /* home two responsive */
-.content-section .content-inner{
-    flex-direction: column;
-}
-.content-section .content-inner >div {
-    width: 100%;
-}
-.content-section .content-inner >div:nth-child(2) {
-    margin: 0 0;
-}
-.middle-container input[type=text]{
-    width: 100%;
-}
-.home-two .middle-container .btn-and-icon{
-    display: flex;
-    flex-direction: column;
-}
-.home-two .dropdown-container{
-    margin-right: 0;
-}
-.responsive-post-sec{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 20px;
-}
-.home-two .content-profile .img-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.home-two article {
-    flex-direction: column;
-}
-.home-two article .text-day {
-    width: 100%!important;
-}
   /* home.html responsive */
   .section-filters .filter-inner{
     flex-direction: column;

@@ -845,7 +845,7 @@ input[type=file]::-webkit-file-upload-button{
 }
 .btn-drop{
        position: absolute;
-   z-index: 1;
+   z-index: 2;
    margin-top: 14px;
    display: none;
 }
@@ -1018,126 +1018,8 @@ border-left: none;
 }
 /* post container end*/
 /* middle section common classes end */
-
-/* page two start */
-.page-two {
-    margin-bottom: 25px;
-}
-.home-two .comment-like{
-    padding-bottom: 6px!important;
-}
-.home-two .option-icon{
-    display: flex;
-    justify-content: flex-end;
-    margin-top:22px;
-}
-.home-two .option-icon .fa{
-    color:#8a8a8a;
-    font-size:22px;
-    margin-left:10px;
-}
-.home-two .option-icon .active .fa{
-    color:#00a1ff!important;
-}
-
-.home-two .comment-like span:last-child{
-    margin-left:0!important;
-    padding:0;
-}
-.home-two .description-text p{
-    margin: 11px 0;
-    font-size: 13px;
-    cursor: pointer!important;
-}
-.home-two .middle-container .btn-and-icon{
-    padding:0;
-}
-.home-two .middle-container{
-    padding:0;
-}
-.home-two .content-profile .img-text{
-    margin-bottom:0;
-}
-.home-two .content-profile .img-text div:nth-child(2){
-    padding: 18px 18px 18px 18px;
-}
-.home-two .content-profile .img-text >div:nth-child(1){
-    width:30%;
-    height:100%;
-    display: flex;
-    height:auto;
-}
-.home-two .section-home-page{
-    margin-right:0!important;
-}
-.home-two article h1{
-    display: inline-block;
-
-}
-.home-two article{
-    display: flex;
-}
-.home-two article .text-container{
-    width:100%!important;
-    height:auto!important;
-    padding:0!important;
-}
-.home-two article .text-day{
-    width:16%!important;
-    height:auto!important;
-    padding:0!important;
-}
-.home-two article .text-day span{
-    margin-left:10px!important;
-    text-align:right;
-}
-.home-two .profile-main-wrapper:first-child{
-    padding:18px;
-}
-.home-two .post-home{
-    margin-top:15px;
-}
-.home-two .ex-post-container{
-    margin-top:10px;
-}
-.home-two .btns-add li{
-    margin-right:0!important;
-    float: none!important;
-}
-.home-two .profile-post{
-    overflow: unset;
-}
-.home-two .dropdown-container .fa-angle-down {
-    margin-left: 8px;
-    color: #080808;
-    font-size: 16px;
-    font-weight: bold;
-}
-.home-two .dropdown-container{
-    margin-right:32px;
-}
-.home-two .btn-transparent{
-    font-weight:bold;
-}
-.home-two .middle-container .btn-and-icon{
-    padding-top: 10px;
-}
-.home-two .middle-container .btn-and-icon{
-    padding-top:0;
-}
-.home-two input[type=text]{
-    padding: 10px 20px;
-    font-size:16px;
-}
-.home-two .pagetwo-bar{
-    margin-bottom: 25px;
-}
-/* page two end */
-
-
 /* lifescape page start*/
 /* bacground image section start */
-
 .section-img{
     background-image: url(../assets/images/building.jpg);
     background-repeat: no-repeat;
@@ -1273,6 +1155,17 @@ border-left: none;
     color:#d8d9dc!important;
 }
 /* navigation section filter day month end */
+.spectrum-card-large{
+    display: none;
+    margin: 10px 0;
+}
+.spectrum-card-large img{
+    width: 100%;
+}
+.spectrum-card-small{
+    margin: 10px 0;
+    cursor: pointer;
+}
 /* lifescape page end*/
 
 /* section timeline start */
@@ -1293,7 +1186,7 @@ border-left: none;
 .time-line .time-line-flex>div:last-child{
     overflow: hidden;
     width:100%;
-    padding: 10px 10px 10px 0px;
+    padding: 0 10px 10px 0px;
 }
 .time-line .time-line-flex h5{
     text-align:center;
@@ -1349,7 +1242,8 @@ border-left: none;
 }
 .outer-card{
     display:flex;
-    align-items: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
 }
 .outer-card>div{
     margin-right:15px;
@@ -2377,18 +2271,19 @@ a:hover{
 .about .invite-friends .col-content{
     /*background: #ffffff;*/
     /*padding: 0;*/
-    /*width: 30%;*/
-    /*margin-left: 28px;*/
+    width: 30%;
+    margin-left: 28px;
     padding-right: 0px;
-
+    padding-left: 0;
+    height: 100%;
 }
 .cards-content:hover{
     box-shadow: 1px 1px 13px #dcd6d6;
 }
 
 .about .invite-friends .col-content:hover {
-    /*box-shadow: 0px 3px 7px #dcd6d6;*/
-    height: 100%;
+    box-shadow: 0px 3px 7px #dcd6d6;
+    /* height: 100%; */
 }
 .places-add{
     /* margin-bottom: -4px; */
@@ -2441,8 +2336,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     background: #e5e5e5;
-    width: 36%;
-    margin-right: 0;
+    padding: 115px;
 }
 .dashed-content p{
     font-size: 22px;
@@ -2874,8 +2768,9 @@ a:hover{
     margin-bottom: 0;
 }
 .chat-user li{
-    padding: 13px 20px;
+    padding: 14px 18px;
     cursor: pointer;
+    position: relative;
 }
 .customScrollbar{
     max-height: calc(100vh - 210px);
@@ -3101,16 +2996,23 @@ label.control-label {
 }
 .smile-block{
     position: absolute;
-    width: 200px;
+    width: 180px;
     height: 100px;
     right: 0;
     background: white;
     bottom: 50px;
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 5px;
     transition: visibility 0s linear .3s,opacity .3s linear;
     box-shadow: 0 0 34px 0 rgba(63,66,87,.1);
+}
+.smile-block li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
 }
 .smile-hover{
     margin-left: 10px;
@@ -3192,7 +3094,7 @@ label.control-label {
     top: 5px;
     right: 30px;
     display: flex;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
 }
 .right-side-bar-large .more .three-dots-icon:hover + .more-icons{
     visibility: visible;
@@ -3204,6 +3106,7 @@ label.control-label {
     padding: 0;
     border-top: 1px solid #e6ecf5;
     display: flex;
+    justify-content: space-around;
 }
 .right-side-bar-large .search-friend input{
     padding: .5rem 1.1rem;
@@ -3212,7 +3115,7 @@ label.control-label {
     border: 1px solid #e6ecf5;
 }
 .right-side-bar-large .form-group{
-    margin: 15px 20px;
+    margin: 15px 20px 15px 0;
     max-width: 150px;
 }
 .right-side-bar-large .form-control:focus{
@@ -3249,6 +3152,45 @@ label.control-label {
 }
 .responsive-sidebar{
     display:none;
+}
+.pop-icon-1{
+    width: 20px;
+    height: 25px;
+    fill: #c2c5d9;
+    cursor: pointer;
+}
+.conversation-icons{
+    width: 20px;
+    height: 20px;
+    fill: #c2c5d9;
+}
+.mytooltip{
+    position: absolute;
+    display: none;
+    bottom: 40px;
+    right: 0;
+    width: 106px;
+    background-color: black;
+    padding: 7px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 8px;
+}
+.mytooltip:after {
+    border-top: 8px solid black;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    bottom: -8px;
+    content: "";
+    position: absolute;
+    right: 25px;
+    margin-left: 0px;
+    width: 0;
+    height: 0;
+}
+.conversation-icons:hover .mytooltip{
+    display: block;
 }
 /* right sidebar end*/
 /* slider css start */

@@ -31,7 +31,25 @@ $(document).on("click", function(event){
         $(".drop2").slideUp("fast");
     }
 });
+// spectrum page start
+$(".spectrum-card-small").on('click',function(){
+    $('.spectrum-card-small').show();
+    $(this).hide();
+    $('.spectrum-card-large').hide();
+    $(this).parent().find('.spectrum-card-large').fadeIn();
+});
+$(document).mouseup(function(e) 
+{
+    var container = $(".spectrum-card-large");
 
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        $('.spectrum-card-small').show();
+        container.hide();
+    }
+});
+// spectrum page end
 // Show hide popover
 $(".btn-click").click(function(){
     $('.drop').fadeOut();
